@@ -20,22 +20,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xfx-tf-MzA">
-                                <rect key="frame" x="100" y="337" width="259" height="81"/>
+                                <rect key="frame" x="100" y="337" width="259" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Robert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp4-Kw-TGO">
-                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666657" height="23.666666666666686"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="113.33333333333334" height="28.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herdzik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT9-8D-J8q">
-                                        <rect key="frame" x="0.0" y="28.666666666666686" width="101" height="23.666666666666629"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <rect key="frame" x="0.0" y="33.333333333333314" width="129.33333333333334" height="28.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: 28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN1-7x-y4f">
-                                        <rect key="frame" x="0.0" y="57.333333333333314" width="59.333333333333343" height="23.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="66.666666666666686" width="59.333333333333343" height="28.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                     <constraint firstItem="Lp4-Kw-TGO" firstAttribute="leading" secondItem="Xfx-tf-MzA" secondAttribute="leading" id="FEZ-Er-g8O"/>
                                     <constraint firstItem="uT9-8D-J8q" firstAttribute="leading" secondItem="Xfx-tf-MzA" secondAttribute="leading" id="NEe-CB-Agq"/>
                                     <constraint firstAttribute="bottom" secondItem="tN1-7x-y4f" secondAttribute="bottom" id="NWI-st-fua"/>
-                                    <constraint firstAttribute="height" constant="81" id="QfT-90-FeM"/>
+                                    <constraint firstAttribute="height" constant="95" id="QfT-90-FeM"/>
                                     <constraint firstItem="Lp4-Kw-TGO" firstAttribute="top" secondItem="Xfx-tf-MzA" secondAttribute="top" id="QpY-mx-U5h"/>
                                     <constraint firstItem="uT9-8D-J8q" firstAttribute="leading" secondItem="tN1-7x-y4f" secondAttribute="leading" id="YXd-e9-753"/>
                                     <constraint firstItem="uT9-8D-J8q" firstAttribute="leading" secondItem="Xfx-tf-MzA" secondAttribute="leading" id="cut-As-JQh"/>
@@ -130,7 +130,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWj-uS-Tc3">
-                                <rect key="frame" x="84" y="431" width="285" height="2"/>
+                                <rect key="frame" x="84" y="445" width="285" height="2"/>
                                 <color key="backgroundColor" red="0.84961949479999999" green="0.84961949479999999" blue="0.84961949479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="Llb-Kf-GRk"/>
@@ -138,7 +138,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H8I-S0-dWx">
-                                <rect key="frame" x="44" y="483" width="287" height="108"/>
+                                <rect key="frame" x="44" y="497" width="287" height="108"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="43r-GF-PwZ">
                                         <rect key="frame" x="0.0" y="0.0" width="287" height="32.666666666666629"/>
@@ -350,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479.19999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="479.19999999999999" y="133.00492610837438"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="prn-9f-RC0">
