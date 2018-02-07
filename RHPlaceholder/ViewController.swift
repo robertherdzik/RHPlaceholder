@@ -72,7 +72,7 @@ class RHPlaceholder {
     }
     
     convenience init() {
-        self.init(layerAnimator: RHLayerAnimatorDefault())
+        self.init(layerAnimator: RHLayerAnimatorGradient())
     }
     
     func register(_ viewElements: [UIView]) {
@@ -120,7 +120,35 @@ protocol RHLayerAnimating {
     func addAnimation(to layer: CALayer)
 }
 
-struct RHLayerAnimatorDefault: RHLayerAnimating {
+struct RHLayerAnimatorGradient: RHLayerAnimating {
+    
+    func addAnimation(to layer: CALayer) {
+        // A Basic Implementation
+        let gradient = CAGradientLayer()
+        gradient.frame = layer.bounds
+        gradient.colors = [
+            UIColor.lightGray.cgColor,
+            UIColor.gray.cgColor
+        ]
+        gradient.startPoint = CGPoint(x:0, y:0)
+        gradient.endPoint = CGPoint(x:1, y:1)
+        
+        let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
+        gradientChangeAnimation.duration = 0.6
+        gradientChangeAnimation.toValue = [
+            UIColor.gray.cgColor,
+            UIColor.lightGray.cgColor
+        ]
+        gradientChangeAnimation.fillMode = kCAFillModeBackwards
+        gradientChangeAnimation.isRemovedOnCompletion = false
+        gradientChangeAnimation.repeatCount = Float.greatestFiniteMagnitude
+        gradient.add(gradientChangeAnimation, forKey: "colorChange")
+    
+        layer.addSublayer(gradient)
+    }
+}
+
+struct RHLayerAnimatorBlink: RHLayerAnimating {
     
     func addAnimation(to layer: CALayer) {
         let animation = CABasicAnimation()
