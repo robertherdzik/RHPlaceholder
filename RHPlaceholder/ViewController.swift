@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     }
 }
 
-class RHPlaceholder {
+final class RHPlaceholder {
     
     private var placeholders = [RHPlaceholderItem]()
     private var layerAnimator: RHLayerAnimating
@@ -116,52 +116,6 @@ class RHPlaceholder {
     }
 }
 
-protocol RHLayerAnimating {
-    func addAnimation(to layer: CALayer)
-}
-
-struct RHLayerAnimatorGradient: RHLayerAnimating {
-    
-    func addAnimation(to layer: CALayer) {
-        // A Basic Implementation
-        let gradient = CAGradientLayer()
-        gradient.frame = layer.bounds
-        gradient.colors = [
-            UIColor.lightGray.cgColor,
-            UIColor.gray.cgColor
-        ]
-        gradient.startPoint = CGPoint(x:0, y:0)
-        gradient.endPoint = CGPoint(x:1, y:1)
-        
-        let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
-        gradientChangeAnimation.duration = 0.6
-        gradientChangeAnimation.toValue = [
-            UIColor.gray.cgColor,
-            UIColor.lightGray.cgColor
-        ]
-        gradientChangeAnimation.fillMode = kCAFillModeBackwards
-        gradientChangeAnimation.isRemovedOnCompletion = false
-        gradientChangeAnimation.repeatCount = Float.greatestFiniteMagnitude
-        gradient.add(gradientChangeAnimation, forKey: "colorChange")
-    
-        layer.addSublayer(gradient)
-    }
-}
-
-struct RHLayerAnimatorBlink: RHLayerAnimating {
-    
-    func addAnimation(to layer: CALayer) {
-        let animation = CABasicAnimation()
-        animation.keyPath = "backgroundColor"
-        animation.toValue = UIColor.gray.cgColor
-        animation.duration = 0.6
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        animation.repeatCount = Float.greatestFiniteMagnitude
-        
-        layer.add(animation, forKey: "bg_animation")
-    }
-}
-
 struct RHPlaceholderItem {
     
     let originItem: UIView // TODO [🌶]: consider 'weak'
@@ -169,5 +123,105 @@ struct RHPlaceholderItem {
     
     init(originItem: UIView) {
         self.originItem = originItem
+    }
+}
+
+// ------------------------------------------------
+// ------------------------------------------------
+protocol RHLayerAnimatorGradientConfigurable {
+    var animationDuration: CFTimeInterval { get }
+    var fromColor: CGColor { get }
+    var toColor: CGColor { get }
+}
+
+struct RHLayerAnimatorGradientConfiguration: RHLayerAnimatorGradientConfigurable {
+    
+    private(set) var animationDuration: CFTimeInterval = 0.6
+    private(set) var fromColor: CGColor = UIColor.gray.cgColor
+    private(set) var toColor: CGColor = UIColor.lightGray.cgColor
+}
+
+protocol RHLayerAnimating {
+    func addAnimation(to layer: CALayer)
+}
+
+struct RHLayerAnimatorGradient: RHLayerAnimating {
+    
+    struct Constants {
+        static let basicAnimationKeyPath = "colors"
+        static let gradientAnimationAddKeyPath = "colorChange"
+    }
+    
+    private let configuration: RHLayerAnimatorGradientConfigurable
+    
+    init(configuration: RHLayerAnimatorGradientConfigurable) {
+        self.configuration = configuration
+    }
+    
+    init() {
+        self.init(configuration: RHLayerAnimatorGradientConfiguration())
+    }
+    
+    func addAnimation(to layer: CALayer) {
+        // A Basic Implementation
+        let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
+        animation.duration = configuration.animationDuration
+        animation.toValue = [
+            configuration.toColor,
+            configuration.fromColor
+        ]
+        animation.fillMode = kCAFillModeBackwards
+        animation.isRemovedOnCompletion = false
+        animation.repeatCount = Float.greatestFiniteMagnitude
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = layer.bounds
+        gradient.colors = [
+            configuration.fromColor,
+            configuration.toColor
+        ]
+        gradient.startPoint = CGPoint(x:0, y:0)
+        gradient.endPoint = CGPoint(x:1, y:1)
+        gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
+        
+        layer.addSublayer(gradient)
+    }
+}
+
+// ------------------------------------------------
+// ------------------------------------------------
+
+protocol RHLayerAnimatorBlinkConfigurable {
+    var animationDuration: CFTimeInterval { get }
+    var blinkColor: CGColor { get }
+}
+
+struct RHLayerAnimatorBlinkConfiguration: RHLayerAnimatorBlinkConfigurable {
+
+    private(set) var animationDuration: CFTimeInterval = 0.6
+    private(set) var blinkColor: CGColor = UIColor.gray.cgColor
+}
+
+struct RHLayerAnimatorBlink: RHLayerAnimating {
+    
+    struct Constants {
+        static let basicAnimationKeyPath = "backgroundColor"
+        static let gradientAnimationAddKeyPath = "colorChange"
+    }
+    
+    private let configuration: RHLayerAnimatorBlinkConfigurable
+    
+    init(configuration: RHLayerAnimatorBlinkConfigurable) {
+        self.configuration = configuration
+    }
+    
+    func addAnimation(to layer: CALayer) {
+        let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
+        animation.duration = configuration.animationDuration
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.repeatCount = Float.greatestFiniteMagnitude
+        animation.toValue = configuration.blinkColor
+        
+        layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
     }
 }
