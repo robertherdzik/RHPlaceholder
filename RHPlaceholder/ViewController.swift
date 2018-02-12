@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         // Fetched data from API simulation
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.removePhaceholder()
         }
     }
@@ -102,7 +102,7 @@ class RHPlaceholder {
     private func addShieldViewOriginView(from placeholder: RHPlaceholderItem) {
         let shield = placeholder.shield
         shield.backgroundColor = UIColor.lightGray
-        shield.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        shield.autoresizingMask = [.flexibleBottomMargin, .flexibleRightMargin]
         
         shield.frame = placeholder.originItem.bounds
         placeholder.originItem.addSubview(shield)
