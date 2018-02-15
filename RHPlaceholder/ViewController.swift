@@ -28,13 +28,19 @@ class ViewController: UIViewController {
         // Adding placeholder 
         addPlaceholder()
     }
-    
+    static var ind = 0
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Fetched data from API simulation
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.removePhaceholder()
+        }
+        
+        if ViewController.ind == 0 { // TODO [🌶]: remove
+            let vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ViewController")
+            navigationController?.pushViewController(vc, animated: true)
+            ViewController.ind += 1
         }
     }
     
@@ -60,19 +66,23 @@ class ViewController: UIViewController {
         }
         photoImgView4.layer.masksToBounds = true
     }
+    
+    deinit {
+        print("deinit 😀")
+    }
 }
 
 final class RHPlaceholder {
     
     private var placeholders = [RHPlaceholderItem]()
-    private var layerAnimator: RHLayerAnimating
+    private var layerAnimator: RHLayerAnimating.Type
     
-    init(layerAnimator: RHLayerAnimating) {
+    init(layerAnimator: RHLayerAnimating.Type) {
         self.layerAnimator = layerAnimator
     }
     
     convenience init() {
-        self.init(layerAnimator: RHLayerAnimatorGradient())
+        self.init(layerAnimator: RHLayerAnimatorGradient.self)
     }
     
     func register(_ viewElements: [UIView]) {
@@ -101,7 +111,7 @@ final class RHPlaceholder {
     
     private func addShieldViewOriginView(from placeholder: RHPlaceholderItem) {
         let shield = placeholder.shield
-        shield.backgroundColor = UIColor.lightGray
+        shield.backgroundColor = UIColor.white
         shield.autoresizingMask = [.flexibleBottomMargin, .flexibleRightMargin]
         
         shield.frame = placeholder.originItem.bounds
@@ -111,8 +121,14 @@ final class RHPlaceholder {
     private func animate() {
         placeholders.forEach { [weak self] in
             let layer = $0.shield.layer
-            self?.layerAnimator.addAnimation(to: layer)
+            let animator = self?.layerAnimator.init()
+            
+            animator?.addAnimation(to: layer)
         }
+    }
+    
+    deinit {
+        print("deinit 😀")
     }
 }
 
@@ -136,16 +152,17 @@ protocol RHLayerAnimatorGradientConfigurable {
 
 struct RHLayerAnimatorGradientConfiguration: RHLayerAnimatorGradientConfigurable {
     
-    private(set) var animationDuration: CFTimeInterval = 0.6
-    private(set) var fromColor: CGColor = UIColor.gray.cgColor
+    private(set) var animationDuration: CFTimeInterval = 0.5
+    private(set) var fromColor: CGColor = UIColor.white.cgColor
     private(set) var toColor: CGColor = UIColor.lightGray.cgColor
 }
 
 protocol RHLayerAnimating {
+    init()
     func addAnimation(to layer: CALayer)
 }
 
-struct RHLayerAnimatorGradient: RHLayerAnimating {
+class RHLayerAnimatorGradient: NSObject, RHLayerAnimating {
     
     struct Constants {
         static let basicAnimationKeyPath = "colors"
@@ -153,38 +170,63 @@ struct RHLayerAnimatorGradient: RHLayerAnimating {
     }
     
     private let configuration: RHLayerAnimatorGradientConfigurable
+    private var gradientSet = [[CGColor]]()
+    private var currentGradient: Int = 0
+    
+    let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
+    let gradient = CAGradientLayer()
     
     init(configuration: RHLayerAnimatorGradientConfigurable) {
         self.configuration = configuration
+        
+        super.init()
+        
+        gradientSet.append([configuration.fromColor, configuration.toColor])
+        gradientSet.append([configuration.toColor, configuration.fromColor])
     }
     
-    init() {
+    convenience override required init() {
         self.init(configuration: RHLayerAnimatorGradientConfiguration())
     }
     
     func addAnimation(to layer: CALayer) {
-        // A Basic Implementation
-        let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
-        animation.duration = configuration.animationDuration
-        animation.toValue = [
-            configuration.toColor,
-            configuration.fromColor
-        ]
-        animation.fillMode = kCAFillModeBackwards
-        animation.isRemovedOnCompletion = false
-        animation.repeatCount = Float.greatestFiniteMagnitude
-        
-        let gradient = CAGradientLayer()
         gradient.frame = layer.bounds
-        gradient.colors = [
-            configuration.fromColor,
-            configuration.toColor
-        ]
         gradient.startPoint = CGPoint(x:0, y:0)
         gradient.endPoint = CGPoint(x:1, y:1)
-        gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
-        
+
         layer.addSublayer(gradient)
+
+        animateGradient()
+    }
+    
+    func animateGradient() {
+        if currentGradient < gradientSet.count - 1 {
+            currentGradient += 1
+        } else {
+            currentGradient = 0
+        }
+    
+        animation.duration = configuration.animationDuration
+        animation.toValue = gradientSet[currentGradient]
+        animation.fillMode = kCAFillModeForwards
+        animation.isRemovedOnCompletion = false
+        animation.delegate = self // TODO [🌶]: work with retain cycle in here
+        
+        gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
+    }
+    
+    deinit {
+        print("deinit 😀")
+    }
+}
+
+extension RHLayerAnimatorGradient: CAAnimationDelegate {
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            gradient.colors = gradientSet[currentGradient]
+            animateGradient()
+        }
     }
 }
 
@@ -215,6 +257,10 @@ struct RHLayerAnimatorBlink: RHLayerAnimating {
         self.configuration = configuration
     }
     
+    init() {
+        self.init(configuration: RHLayerAnimatorBlinkConfiguration())
+    }
+    
     func addAnimation(to layer: CALayer) {
         let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
         animation.duration = configuration.animationDuration
@@ -223,5 +269,9 @@ struct RHLayerAnimatorBlink: RHLayerAnimating {
         animation.toValue = configuration.blinkColor
         
         layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
+    }
+    
+    func removeDelegate() {
+        
     }
 }
