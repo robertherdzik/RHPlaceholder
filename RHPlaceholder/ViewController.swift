@@ -163,7 +163,7 @@ protocol RHLayerAnimating {
 
 class RHCAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
     
-    let animationDidStopCompletion: ()->()
+    private let animationDidStopCompletion: ()->()
     
     init(animationDidStopCompletion: @escaping ()->()) {
         self.animationDidStopCompletion = animationDidStopCompletion
@@ -285,9 +285,5 @@ struct RHLayerAnimatorBlink: RHLayerAnimating {
         animation.toValue = configuration.blinkColor
         
         layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
-    }
-    
-    func removeDelegate() {
-        
     }
 }
