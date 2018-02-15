@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         // Adding placeholder 
         addPlaceholder()
     }
-    static var ind = 0
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -59,10 +59,6 @@ class ViewController: UIViewController {
             $0.layer.cornerRadius = $0.bounds.width/2
         }
         photoImgView4.layer.masksToBounds = true
-    }
-    
-    deinit {
-        print("deinit 😀")
     }
 }
 
