@@ -185,7 +185,7 @@ class RHCAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
 
 final class RHLayerAnimatorGradient: RHLayerAnimating {
     
-    struct Constants {
+    private struct Constants {
         static let basicAnimationKeyPath = "colors"
         static let gradientAnimationAddKeyPath = "colorChange"
     }
@@ -266,7 +266,7 @@ struct RHLayerAnimatorBlinkConfiguration: RHLayerAnimatorBlinkConfigurable {
 
 struct RHLayerAnimatorBlink: RHLayerAnimating {
     
-    struct Constants {
+    private struct Constants {
         static let basicAnimationKeyPath = "backgroundColor"
         static let gradientAnimationAddKeyPath = "colorChange"
     }
