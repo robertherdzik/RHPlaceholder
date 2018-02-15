@@ -36,12 +36,6 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.removePhaceholder()
         }
-        
-        if ViewController.ind == 0 { // TODO [🌶]: remove
-            let vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ViewController")
-            navigationController?.pushViewController(vc, animated: true)
-            ViewController.ind += 1
-        }
     }
     
     private func addPlaceholder() {
@@ -76,6 +70,8 @@ final class RHPlaceholder {
     
     private var placeholders = [RHPlaceholderItem]()
     private var layerAnimator: RHLayerAnimating.Type
+    // Property keeps all references to the animators to avoid early release
+    private var animators = [RHLayerAnimating]()
     
     init(layerAnimator: RHLayerAnimating.Type) {
         self.layerAnimator = layerAnimator
@@ -99,6 +95,8 @@ final class RHPlaceholder {
             let layer = placeholder.shield
             layer.removeFromSuperview()
         }
+        
+        removeAnimatorsReferences()
     }
     
     private func addLayer() {
@@ -122,13 +120,18 @@ final class RHPlaceholder {
         placeholders.forEach { [weak self] in
             let layer = $0.shield.layer
             let animator = self?.layerAnimator.init()
+            animators.append(animator!)
             
             animator?.addAnimation(to: layer)
         }
     }
     
+    private func removeAnimatorsReferences() {
+        animators.removeAll()
+    }
+    
     deinit {
-        print("deinit 😀")
+        removeAnimatorsReferences()
     }
 }
 
@@ -162,7 +165,25 @@ protocol RHLayerAnimating {
     func addAnimation(to layer: CALayer)
 }
 
-class RHLayerAnimatorGradient: NSObject, RHLayerAnimating {
+class RHCAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
+    
+    let animationDidStopCompletion: ()->()
+    
+    init(animationDidStopCompletion: @escaping ()->()) {
+        self.animationDidStopCompletion = animationDidStopCompletion
+        
+        super.init()
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            animationDidStopCompletion()
+        }
+    }
+}
+    
+
+final class RHLayerAnimatorGradient: RHLayerAnimating {
     
     struct Constants {
         static let basicAnimationKeyPath = "colors"
@@ -170,22 +191,21 @@ class RHLayerAnimatorGradient: NSObject, RHLayerAnimating {
     }
     
     private let configuration: RHLayerAnimatorGradientConfigurable
-    private var gradientSet = [[CGColor]]()
+    private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
+    private let gradient = CAGradientLayer()
+
+    private lazy var gradientColors = [[configuration.fromColor, configuration.toColor],
+                                       [configuration.toColor, configuration.fromColor]]
     private var currentGradient: Int = 0
-    
-    let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
-    let gradient = CAGradientLayer()
+    private var animationDelegate: RHCAAnimationDelegateReceiver?
     
     init(configuration: RHLayerAnimatorGradientConfigurable) {
         self.configuration = configuration
         
-        super.init()
-        
-        gradientSet.append([configuration.fromColor, configuration.toColor])
-        gradientSet.append([configuration.toColor, configuration.fromColor])
+        setupAnimationDelegateReceiver()
     }
     
-    convenience override required init() {
+    convenience required init() {
         self.init(configuration: RHLayerAnimatorGradientConfiguration())
     }
     
@@ -199,34 +219,34 @@ class RHLayerAnimatorGradient: NSObject, RHLayerAnimating {
         animateGradient()
     }
     
-    func animateGradient() {
-        if currentGradient < gradientSet.count - 1 {
-            currentGradient += 1
-        } else {
-            currentGradient = 0
-        }
+    private func animateGradient() {
+        adjustCurrentGradientNumber()
     
         animation.duration = configuration.animationDuration
-        animation.toValue = gradientSet[currentGradient]
+        animation.toValue = gradientColors[currentGradient]
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
-        animation.delegate = self // TODO [🌶]: work with retain cycle in here
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
     }
     
-    deinit {
-        print("deinit 😀")
-    }
-}
-
-extension RHLayerAnimatorGradient: CAAnimationDelegate {
-    
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        if flag {
-            gradient.colors = gradientSet[currentGradient]
-            animateGradient()
+    private func adjustCurrentGradientNumber() {
+        let isGradientNumberExceedGradientColors = currentGradient >= gradientColors.count - 1
+        if isGradientNumberExceedGradientColors {
+            currentGradient = 0
+        } else {
+            currentGradient += 1
         }
+    }
+    
+    private func setupAnimationDelegateReceiver() {
+        animationDelegate = RHCAAnimationDelegateReceiver(animationDidStopCompletion: { [weak self] in
+            guard let sSelf = self else { return }
+            
+            sSelf.gradient.colors = sSelf.gradientColors[sSelf.currentGradient]
+            sSelf.animateGradient()
+        })
+        animation.delegate = animationDelegate
     }
 }
 
@@ -241,7 +261,7 @@ protocol RHLayerAnimatorBlinkConfigurable {
 struct RHLayerAnimatorBlinkConfiguration: RHLayerAnimatorBlinkConfigurable {
 
     private(set) var animationDuration: CFTimeInterval = 0.6
-    private(set) var blinkColor: CGColor = UIColor.gray.cgColor
+    private(set) var blinkColor: CGColor = UIColor.lightGray.cgColor
 }
 
 struct RHLayerAnimatorBlink: RHLayerAnimating {
