@@ -133,7 +133,7 @@ final class RHPlaceholder {
 
 struct RHPlaceholderItem {
     
-    let originItem: UIView // TODO [🌶]: consider 'weak'
+    let originItem: UIView
     let shield = UIView()
     
     init(originItem: UIView) {
