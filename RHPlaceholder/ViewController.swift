@@ -23,18 +23,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.clipsToBounds = true
         roundProfileImageContainers()
         
-        // Adding placeholder 
+        // Add placeholder
         addPlaceholder()
     }
     
+    static var testValue = 1
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Fetched data from API simulation
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.removePhaceholder()
+        }
+        
+        
+        if ViewController.testValue == 1 {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+            navigationController?.pushViewController(vc, animated: true)
+            ViewController.testValue -= 1
         }
     }
     
@@ -97,13 +107,13 @@ final class RHPlaceholder {
     
     private func addLayer() {
         placeholders.forEach { placeholder in
-            addShieldViewOriginView(from: placeholder)
+            addShieldViewToOriginView(from: placeholder)
         }
         
         animate()
     }
     
-    private func addShieldViewOriginView(from placeholder: RHPlaceholderItem) {
+    private func addShieldViewToOriginView(from placeholder: RHPlaceholderItem) {
         let shield = placeholder.shield
         shield.backgroundColor = UIColor.white
         shield.autoresizingMask = [.flexibleBottomMargin, .flexibleRightMargin]
