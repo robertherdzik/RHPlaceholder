@@ -30,21 +30,12 @@ class ViewController: UIViewController {
         addPlaceholder()
     }
     
-    static var testValue = 1
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Fetched data from API simulation
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.removePhaceholder()
-        }
-        
-        
-        if ViewController.testValue == 1 {
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
-            navigationController?.pushViewController(vc, animated: true)
-            ViewController.testValue -= 1
         }
     }
     
