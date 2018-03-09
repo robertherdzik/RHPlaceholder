@@ -4,7 +4,7 @@ Simple code snippet which gives you ability to support 'loading' state for your 
 
 
 ---
-##TODO:
+## TODO:
 - [x] add shimmering animation
 - [ ] create pod
 - [x] add color configuration
