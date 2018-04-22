@@ -17,6 +17,8 @@ final class RHPlaceholder {
     }
     
     func register(_ viewElements: [UIView]) {
+        guard viewElements.count > 0 else { return }
+        
         viewElements.forEach {
             let placeholderItem = RHPlaceholderItem(originItem: $0)
             self.placeholders.append(placeholderItem)

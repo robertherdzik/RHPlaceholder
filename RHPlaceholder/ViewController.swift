@@ -40,14 +40,16 @@ class ViewController: UIViewController {
     }
     
     private func addPlaceholder() {
-        let viewElements: [UIView] = [photoImgView4,
-                                      numberOfMiles,
-                                      name,
-                                      surname,
-                                      age,
-                                      email,
-                                      birthDate,
-                                      sex]
+        let viewElements: [UIView] = [
+            photoImgView4,
+            numberOfMiles,
+            name,
+            surname,
+            age,
+            email,
+            birthDate,
+            sex
+        ]
         placeholderMarker.register(viewElements)
     }
 
