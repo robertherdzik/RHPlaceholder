@@ -1,7 +1,7 @@
 import UIKit
 
-final class RHLayerAnimatorGradient: RHLayerAnimating {
-    
+final class RHInstaLayerAnimatorGradient: LayerAnimating {
+    // TODO [🌶]: duplication
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
         static let gradientAnimationAddKeyPath = "colorChange"
@@ -11,8 +11,10 @@ final class RHLayerAnimatorGradient: RHLayerAnimating {
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
     
-    private lazy var gradientColors = [[configuration.fromColor, configuration.toColor],
-                                       [configuration.toColor, configuration.fromColor]]
+    private lazy var gradientColors = [
+        [configuration.fromColor, configuration.toColor],
+        [configuration.toColor, configuration.fromColor]
+    ]
     private var currentGradient: Int = 0
     private var animationDelegate: RHCAAnimationDelegateReceiver?
     
@@ -23,13 +25,14 @@ final class RHLayerAnimatorGradient: RHLayerAnimating {
     }
     
     convenience required init() {
-        self.init(configuration: RHLayerAnimatorGradientConfiguration())
+        self.init(configuration: RHInstaLayerAnimatorGradientConfiguration())
     }
     
-    func addAnimation(to layer: CALayer) {
+    func addAnimation(to layer: CALayer) { // TODO [🌶]: extract using abstraction
         gradient.frame = layer.bounds
-        gradient.startPoint = CGPoint(x:0, y:0)
-        gradient.endPoint = CGPoint(x:1, y:1)
+        gradient.startPoint = CGPoint(x:0.1, y:0) // TODO [🌶]: adjust gradient according to element size
+        gradient.endPoint = CGPoint(x:0.8, y:0.2)
+        gradient.opacity = 0.2 // TODO [🌶]: move to the configuration
         
         layer.addSublayer(gradient)
         
@@ -41,7 +44,7 @@ final class RHLayerAnimatorGradient: RHLayerAnimating {
         
         animation.duration = configuration.animationDuration
         animation.toValue = gradientColors[currentGradient]
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = kCAFillModeBoth
         animation.isRemovedOnCompletion = false
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)

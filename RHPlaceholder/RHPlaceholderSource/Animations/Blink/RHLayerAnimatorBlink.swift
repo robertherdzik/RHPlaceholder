@@ -1,6 +1,6 @@
 import UIKit
 
-struct RHLayerAnimatorBlink: RHLayerAnimating {
+struct RHLayerAnimatorBlink: LayerAnimating {
     
     private struct Constants {
         static let basicAnimationKeyPath = "backgroundColor"

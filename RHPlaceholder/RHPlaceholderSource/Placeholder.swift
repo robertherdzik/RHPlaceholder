@@ -1,26 +1,26 @@
 
 import UIKit
 
-final class RHPlaceholder {
+final class Placeholder {
     
-    private var placeholders = [RHPlaceholderItem]()
-    private var layerAnimator: RHLayerAnimating.Type
+    private var placeholders = [PlaceholderItem]()
+    private var layerAnimator: LayerAnimating.Type
     // Property keeps all references to the animators to avoid early release
-    private var animators = [RHLayerAnimating]()
+    private var animators = [LayerAnimating]()
     
-    init(layerAnimator: RHLayerAnimating.Type) {
+    init(layerAnimator: LayerAnimating.Type) {
         self.layerAnimator = layerAnimator
     }
     
     convenience init() {
-        self.init(layerAnimator: RHLayerAnimatorGradient.self)
+        self.init(layerAnimator: RHInstaLayerAnimatorGradient.self)
     }
     
     func register(_ viewElements: [UIView]) {
         guard viewElements.count > 0 else { return }
         
         viewElements.forEach {
-            let placeholderItem = RHPlaceholderItem(originItem: $0)
+            let placeholderItem = PlaceholderItem(originItem: $0)
             self.placeholders.append(placeholderItem)
         }
         
@@ -44,7 +44,7 @@ final class RHPlaceholder {
         animate()
     }
     
-    private func addShieldViewToOriginView(from placeholder: RHPlaceholderItem) {
+    private func addShieldViewToOriginView(from placeholder: PlaceholderItem) {
         let shield = placeholder.shield
         shield.backgroundColor = UIColor.white
         shield.autoresizingMask = [.flexibleBottomMargin, .flexibleRightMargin]

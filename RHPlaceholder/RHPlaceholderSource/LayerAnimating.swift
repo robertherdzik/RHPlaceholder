@@ -1,6 +1,6 @@
 import UIKit
  
-protocol RHLayerAnimating {
+protocol LayerAnimating {
     init()
     func addAnimation(to layer: CALayer)
 }

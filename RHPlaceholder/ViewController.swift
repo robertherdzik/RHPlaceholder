@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var birthDate: UILabel!
     @IBOutlet weak var sex: UILabel!
     
-    private let placeholderMarker = RHPlaceholder()
+    private let placeholderMarker = Placeholder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         // Fetched data from API simulation
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.removePhaceholder()
+//            self.removePhaceholder()
         }
     }
     

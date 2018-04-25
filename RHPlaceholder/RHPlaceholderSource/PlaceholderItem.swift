@@ -1,7 +1,7 @@
 
 import UIKit
 
-struct RHPlaceholderItem {
+struct PlaceholderItem {
     
     let originItem: UIView
     let shield = UIView()
