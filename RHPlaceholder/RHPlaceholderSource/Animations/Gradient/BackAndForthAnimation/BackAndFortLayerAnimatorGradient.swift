@@ -1,6 +1,6 @@
 import UIKit
 
-final class RHLayerAnimatorGradient: LayerAnimating {
+final class BackAndFortLayerAnimatorGradient: LayerAnimating {
     
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
@@ -11,10 +11,12 @@ final class RHLayerAnimatorGradient: LayerAnimating {
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
     
-    private lazy var gradientColors = [[configuration.fromColor, configuration.toColor],
-                                       [configuration.toColor, configuration.fromColor]]
+    private lazy var gradientColors = [
+        [configuration.fromColor, configuration.toColor],
+        [configuration.toColor, configuration.fromColor]
+    ]
     private var currentGradient: Int = 0
-    private var animationDelegate: RHCAAnimationDelegateReceiver?
+    private var animationDelegate: CAAnimationDelegateReceiver?
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
@@ -23,14 +25,14 @@ final class RHLayerAnimatorGradient: LayerAnimating {
     }
     
     convenience required init() {
-        self.init(configuration: LayerAnimatorGradientConfiguration())
+        self.init(configuration: BackAndForthLayerAnimatorGradientConfiguration())
     }
     
     func addAnimation(to layer: CALayer) {
         gradient.frame = layer.bounds
-        gradient.startPoint = CGPoint(x:0.1, y:0)
-        gradient.endPoint = CGPoint(x:0.8, y:0.2)
-        gradient.opacity = 0.2
+        gradient.startPoint = CGPoint(x:0, y:0)
+        gradient.endPoint = CGPoint(x:1, y:1)
+        gradient.opacity = 0.4
         
         layer.addSublayer(gradient)
         
@@ -42,7 +44,7 @@ final class RHLayerAnimatorGradient: LayerAnimating {
         
         animation.duration = configuration.animationDuration
         animation.toValue = gradientColors[currentGradient]
-        animation.fillMode = kCAFillModeBoth
+        animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
@@ -58,7 +60,7 @@ final class RHLayerAnimatorGradient: LayerAnimating {
     }
     
     private func setupAnimationDelegateReceiver() {
-        animationDelegate = RHCAAnimationDelegateReceiver(animationDidStopCompletion: { [weak self] in
+        animationDelegate = CAAnimationDelegateReceiver(animationDidStopCompletion: { [weak self] in
             guard let sSelf = self else { return }
             
             sSelf.gradient.colors = sSelf.gradientColors[sSelf.currentGradient]

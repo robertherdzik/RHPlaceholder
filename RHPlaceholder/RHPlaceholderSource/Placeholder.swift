@@ -13,7 +13,7 @@ final class Placeholder {
     }
     
     convenience init() {
-        self.init(layerAnimator: RHInstaLayerAnimatorGradient.self)
+        self.init(layerAnimator: InstaLayerAnimatorGradient.self)
     }
     
     func register(_ viewElements: [UIView]) {

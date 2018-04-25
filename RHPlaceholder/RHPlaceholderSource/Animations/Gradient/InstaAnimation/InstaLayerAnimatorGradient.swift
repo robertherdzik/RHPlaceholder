@@ -1,6 +1,6 @@
 import UIKit
 
-final class RHInstaLayerAnimatorGradient: LayerAnimating {
+final class InstaLayerAnimatorGradient: LayerAnimating {
     // TODO [🌶]: duplication
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
@@ -16,7 +16,7 @@ final class RHInstaLayerAnimatorGradient: LayerAnimating {
         [configuration.toColor, configuration.fromColor]
     ]
     private var currentGradient: Int = 0
-    private var animationDelegate: RHCAAnimationDelegateReceiver?
+    private var animationDelegate: CAAnimationDelegateReceiver?
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
@@ -25,7 +25,7 @@ final class RHInstaLayerAnimatorGradient: LayerAnimating {
     }
     
     convenience required init() {
-        self.init(configuration: RHInstaLayerAnimatorGradientConfiguration())
+        self.init(configuration: InstaLayerAnimatorGradientConfiguration())
     }
     
     func addAnimation(to layer: CALayer) { // TODO [🌶]: extract using abstraction
@@ -60,7 +60,7 @@ final class RHInstaLayerAnimatorGradient: LayerAnimating {
     }
     
     private func setupAnimationDelegateReceiver() {
-        animationDelegate = RHCAAnimationDelegateReceiver(animationDidStopCompletion: { [weak self] in
+        animationDelegate = CAAnimationDelegateReceiver(animationDidStopCompletion: { [weak self] in
             guard let sSelf = self else { return }
             
             sSelf.gradient.colors = sSelf.gradientColors[sSelf.currentGradient]

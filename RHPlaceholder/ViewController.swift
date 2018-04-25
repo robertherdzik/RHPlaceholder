@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         // Fetched data from API simulation
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-//            self.removePhaceholder()
+            self.removePhaceholder()
         }
     }
     

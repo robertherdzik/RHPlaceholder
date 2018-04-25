@@ -1,6 +1,6 @@
 import UIKit
-// TODO [🌶]: move to common place in terms of gradients animations
-class RHCAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
+
+class CAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
     
     private let animationDidStopCompletion: ()->()
     
