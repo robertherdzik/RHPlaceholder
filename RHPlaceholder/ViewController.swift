@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         // Fetched data from API simulation
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
             self.removePhaceholder()
             
             let nextVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TableVC")

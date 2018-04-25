@@ -13,7 +13,7 @@ class MyCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
     
-    private let placeholderMarker = RHPlaceholder()
+    private let placeholderMarker = Placeholder()
     var dataLoaded = false {
         didSet {
             if dataLoaded {
