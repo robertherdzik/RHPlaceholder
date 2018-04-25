@@ -22,6 +22,8 @@
 		B1ABC95A204085BA00AA388C /* RHLayerAnimatorBlinkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC959204085BA00AA388C /* RHLayerAnimatorBlinkConfigurable.swift */; };
 		B1ABC95D204085E700AA388C /* RHLayerAnimatorBlinkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC95C204085E700AA388C /* RHLayerAnimatorBlinkConfiguration.swift */; };
 		B1ABC95F204085FB00AA388C /* RHLayerAnimatorBlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC95E204085FB00AA388C /* RHLayerAnimatorBlink.swift */; };
+		B1CAC7B1204B462000FF4EFA /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CAC7B0204B462000FF4EFA /* MyTableViewController.swift */; };
+		B1CAC7B3204B481000FF4EFA /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CAC7B2204B481000FF4EFA /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		B1ABC959204085BA00AA388C /* RHLayerAnimatorBlinkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlinkConfigurable.swift; sourceTree = "<group>"; };
 		B1ABC95C204085E700AA388C /* RHLayerAnimatorBlinkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlinkConfiguration.swift; sourceTree = "<group>"; };
 		B1ABC95E204085FB00AA388C /* RHLayerAnimatorBlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlink.swift; sourceTree = "<group>"; };
+		B1CAC7B0204B462000FF4EFA /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableViewController.swift; path = RHPlaceholder/MyTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		B1CAC7B2204B481000FF4EFA /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				B1A7B0D22029060C00934BBF /* Assets.xcassets */,
 				B1A7B0D42029060C00934BBF /* LaunchScreen.storyboard */,
 				B1A7B0D72029060C00934BBF /* Info.plist */,
+				B1CAC7B2204B481000FF4EFA /* MyCell.swift */,
 			);
 			path = RHPlaceholder;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 				B1ABC9492040838D00AA388C /* RHPlaceholder.swift */,
 				B1ABC94B204083C100AA388C /* RHPlaceholderItem.swift */,
 				B1ABC94F2040845500AA388C /* RHLayerAnimating.swift */,
+				B1CAC7B0204B462000FF4EFA /* MyTableViewController.swift */,
 			);
 			path = RHPlaceholderSource;
 			sourceTree = "<group>";
@@ -198,8 +204,10 @@
 				B1ABC94A2040838D00AA388C /* RHPlaceholder.swift in Sources */,
 				B1ABC94E204083F200AA388C /* RHLayerAnimatorGradientConfigurable.swift in Sources */,
 				B1ABC95F204085FB00AA388C /* RHLayerAnimatorBlink.swift in Sources */,
+				B1CAC7B1204B462000FF4EFA /* MyTableViewController.swift in Sources */,
 				B1ABC9552040855000AA388C /* RHCAAnimationDelegateReceiver.swift in Sources */,
 				B1ABC94C204083C100AA388C /* RHPlaceholderItem.swift in Sources */,
+				B1CAC7B3204B481000FF4EFA /* MyCell.swift in Sources */,
 				B1ABC953204084A900AA388C /* RHLayerAnimatorGradientConfiguration.swift in Sources */,
 				B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */,
 			);
