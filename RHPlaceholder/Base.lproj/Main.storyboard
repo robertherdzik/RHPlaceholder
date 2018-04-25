@@ -305,7 +305,7 @@
                                 </constraints>
                             </stackView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lE-b0-27R">
-                                <rect key="frame" x="0.0" y="729" width="375" height="83"/>
+                                <rect key="frame" x="0.0" y="695" width="375" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="gfX-cT-tqT" userLabel="Home"/>
@@ -316,7 +316,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6lE-b0-27R" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="7MP-C8-htj"/>
+                            <constraint firstItem="6lE-b0-27R" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7MP-C8-htj"/>
                             <constraint firstItem="H8I-S0-dWx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="GZx-jY-G9z"/>
                             <constraint firstItem="6lE-b0-27R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Muq-zj-c0O"/>
                             <constraint firstItem="H8I-S0-dWx" firstAttribute="top" secondItem="PWj-uS-Tc3" secondAttribute="bottom" constant="50" id="NNx-BK-BE4"/>

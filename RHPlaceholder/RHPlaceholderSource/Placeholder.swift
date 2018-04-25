@@ -16,6 +16,10 @@ final class Placeholder {
         self.init(layerAnimator: InstaLayerAnimatorGradient.self)
     }
     
+    deinit {
+        removeAnimatorsReferences()
+    }
+    
     func register(_ viewElements: [UIView]) {
         guard viewElements.count > 0 else { return }
         
@@ -51,6 +55,8 @@ final class Placeholder {
         
         shield.frame = placeholder.originItem.bounds
         placeholder.originItem.addSubview(shield)
+        
+        makeFadeInAnimation(forOriginItem: placeholder.originItem)
     }
     
     private func animate() {
@@ -67,7 +73,11 @@ final class Placeholder {
         animators.removeAll()
     }
     
-    deinit {
-        removeAnimatorsReferences()
+    // TODO [🌶]: Quick fix for 'jump in' showing of layers, should be better way to do this [Investigation needed]
+    private func makeFadeInAnimation(forOriginItem originItem: UIView) {
+        originItem.alpha = 0
+        UIView.animate(withDuration: 3) {
+            originItem.alpha = 1
+        }
     }
 }
