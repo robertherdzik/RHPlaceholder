@@ -1,6 +1,6 @@
 import UIKit
 
-class RHCAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
+class CAAnimationDelegateReceiver: NSObject, CAAnimationDelegate {
     
     private let animationDidStopCompletion: ()->()
     

@@ -1,6 +1,6 @@
 import UIKit
 
-protocol RHLayerAnimatorBlinkConfigurable {
+protocol LayerAnimatorBlinkConfigurable {
     var animationDuration: CFTimeInterval { get }
     var blinkColor: CGColor { get }
 }
