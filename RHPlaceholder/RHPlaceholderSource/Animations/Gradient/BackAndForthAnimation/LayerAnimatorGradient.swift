@@ -7,7 +7,7 @@ final class RHLayerAnimatorGradient: LayerAnimating {
         static let gradientAnimationAddKeyPath = "colorChange"
     }
     
-    private let configuration: RHLayerAnimatorGradientConfigurable
+    private let configuration: LayerAnimatorGradientConfigurable
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
     
@@ -16,14 +16,14 @@ final class RHLayerAnimatorGradient: LayerAnimating {
     private var currentGradient: Int = 0
     private var animationDelegate: RHCAAnimationDelegateReceiver?
     
-    init(configuration: RHLayerAnimatorGradientConfigurable) {
+    init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
         
         setupAnimationDelegateReceiver()
     }
     
     convenience required init() {
-        self.init(configuration: RHLayerAnimatorGradientConfiguration())
+        self.init(configuration: LayerAnimatorGradientConfiguration())
     }
     
     func addAnimation(to layer: CALayer) {

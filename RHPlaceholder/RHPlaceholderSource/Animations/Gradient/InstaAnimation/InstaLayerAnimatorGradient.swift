@@ -7,7 +7,7 @@ final class RHInstaLayerAnimatorGradient: LayerAnimating {
         static let gradientAnimationAddKeyPath = "colorChange"
     }
     
-    private let configuration: RHLayerAnimatorGradientConfigurable
+    private let configuration: LayerAnimatorGradientConfigurable
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
     
@@ -18,7 +18,7 @@ final class RHInstaLayerAnimatorGradient: LayerAnimating {
     private var currentGradient: Int = 0
     private var animationDelegate: RHCAAnimationDelegateReceiver?
     
-    init(configuration: RHLayerAnimatorGradientConfigurable) {
+    init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
         
         setupAnimationDelegateReceiver()

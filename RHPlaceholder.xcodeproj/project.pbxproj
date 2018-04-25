@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CF267532090F055009A4004 /* RHLayerAnimatorBlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267462090F055009A4004 /* RHLayerAnimatorBlink.swift */; };
-		2CF267542090F055009A4004 /* RHLayerAnimatorBlinkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267472090F055009A4004 /* RHLayerAnimatorBlinkConfigurable.swift */; };
-		2CF267552090F055009A4004 /* RHLayerAnimatorBlinkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267482090F055009A4004 /* RHLayerAnimatorBlinkConfiguration.swift */; };
-		2CF267562090F055009A4004 /* RHLayerAnimatorGradientConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674B2090F055009A4004 /* RHLayerAnimatorGradientConfigurable.swift */; };
-		2CF267572090F055009A4004 /* RHLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674C2090F055009A4004 /* RHLayerAnimatorGradientConfiguration.swift */; };
-		2CF267582090F055009A4004 /* RHInstaLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674E2090F055009A4004 /* RHInstaLayerAnimatorGradientConfiguration.swift */; };
-		2CF267592090F055009A4004 /* RHInstaLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674F2090F055009A4004 /* RHInstaLayerAnimatorGradient.swift */; };
-		2CF2675A2090F055009A4004 /* RHCAAnimationDelegateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267512090F055009A4004 /* RHCAAnimationDelegateReceiver.swift */; };
-		2CF2675B2090F055009A4004 /* RHLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267522090F055009A4004 /* RHLayerAnimatorGradient.swift */; };
+		2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */; };
+		2CF267542090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */; };
+		2CF267552090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */; };
+		2CF267562090F055009A4004 /* LayerAnimatorGradientConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674B2090F055009A4004 /* LayerAnimatorGradientConfigurable.swift */; };
+		2CF267572090F055009A4004 /* LayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674C2090F055009A4004 /* LayerAnimatorGradientConfiguration.swift */; };
+		2CF267582090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674E2090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift */; };
+		2CF267592090F055009A4004 /* InstaLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674F2090F055009A4004 /* InstaLayerAnimatorGradient.swift */; };
+		2CF2675A2090F055009A4004 /* CAAnimationDelegateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267512090F055009A4004 /* CAAnimationDelegateReceiver.swift */; };
+		2CF2675B2090F055009A4004 /* LayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267522090F055009A4004 /* LayerAnimatorGradient.swift */; };
 		B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CB2029060C00934BBF /* AppDelegate.swift */; };
 		B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CD2029060C00934BBF /* ViewController.swift */; };
 		B1A7B0D12029060C00934BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A7B0CF2029060C00934BBF /* Main.storyboard */; };
@@ -27,15 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CF267462090F055009A4004 /* RHLayerAnimatorBlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlink.swift; sourceTree = "<group>"; };
-		2CF267472090F055009A4004 /* RHLayerAnimatorBlinkConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlinkConfigurable.swift; sourceTree = "<group>"; };
-		2CF267482090F055009A4004 /* RHLayerAnimatorBlinkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorBlinkConfiguration.swift; sourceTree = "<group>"; };
-		2CF2674B2090F055009A4004 /* RHLayerAnimatorGradientConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorGradientConfigurable.swift; sourceTree = "<group>"; };
-		2CF2674C2090F055009A4004 /* RHLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
-		2CF2674E2090F055009A4004 /* RHInstaLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHInstaLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
-		2CF2674F2090F055009A4004 /* RHInstaLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHInstaLayerAnimatorGradient.swift; sourceTree = "<group>"; };
-		2CF267512090F055009A4004 /* RHCAAnimationDelegateReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHCAAnimationDelegateReceiver.swift; sourceTree = "<group>"; };
-		2CF267522090F055009A4004 /* RHLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLayerAnimatorGradient.swift; sourceTree = "<group>"; };
+		2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlink.swift; sourceTree = "<group>"; };
+		2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlinkConfigurable.swift; sourceTree = "<group>"; };
+		2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlinkConfiguration.swift; sourceTree = "<group>"; };
+		2CF2674B2090F055009A4004 /* LayerAnimatorGradientConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorGradientConfigurable.swift; sourceTree = "<group>"; };
+		2CF2674C2090F055009A4004 /* LayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
+		2CF2674E2090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
+		2CF2674F2090F055009A4004 /* InstaLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLayerAnimatorGradient.swift; sourceTree = "<group>"; };
+		2CF267512090F055009A4004 /* CAAnimationDelegateReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationDelegateReceiver.swift; sourceTree = "<group>"; };
+		2CF267522090F055009A4004 /* LayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorGradient.swift; sourceTree = "<group>"; };
 		B1A7B0C82029060C00934BBF /* RHPlaceholder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPlaceholder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A7B0CB2029060C00934BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A7B0CD2029060C00934BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 		2CF267452090F055009A4004 /* Blink */ = {
 			isa = PBXGroup;
 			children = (
-				2CF267462090F055009A4004 /* RHLayerAnimatorBlink.swift */,
-				2CF267472090F055009A4004 /* RHLayerAnimatorBlinkConfigurable.swift */,
-				2CF267482090F055009A4004 /* RHLayerAnimatorBlinkConfiguration.swift */,
+				2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */,
+				2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */,
+				2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */,
 			);
 			path = Blink;
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 		2CF2674A2090F055009A4004 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2CF2674B2090F055009A4004 /* RHLayerAnimatorGradientConfigurable.swift */,
-				2CF2674C2090F055009A4004 /* RHLayerAnimatorGradientConfiguration.swift */,
+				2CF2674B2090F055009A4004 /* LayerAnimatorGradientConfigurable.swift */,
+				2CF2674C2090F055009A4004 /* LayerAnimatorGradientConfiguration.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -100,8 +100,8 @@
 		2CF2674D2090F055009A4004 /* InstaAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				2CF2674E2090F055009A4004 /* RHInstaLayerAnimatorGradientConfiguration.swift */,
-				2CF2674F2090F055009A4004 /* RHInstaLayerAnimatorGradient.swift */,
+				2CF2674E2090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift */,
+				2CF2674F2090F055009A4004 /* InstaLayerAnimatorGradient.swift */,
 			);
 			path = InstaAnimation;
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 		2CF267502090F055009A4004 /* BackAndForthAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				2CF267512090F055009A4004 /* RHCAAnimationDelegateReceiver.swift */,
-				2CF267522090F055009A4004 /* RHLayerAnimatorGradient.swift */,
+				2CF267512090F055009A4004 /* CAAnimationDelegateReceiver.swift */,
+				2CF267522090F055009A4004 /* LayerAnimatorGradient.swift */,
 			);
 			path = BackAndForthAnimation;
 			sourceTree = "<group>";
@@ -229,19 +229,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1ABC9502040845500AA388C /* LayerAnimating.swift in Sources */,
-				2CF267572090F055009A4004 /* RHLayerAnimatorGradientConfiguration.swift in Sources */,
-				2CF267532090F055009A4004 /* RHLayerAnimatorBlink.swift in Sources */,
+				2CF267572090F055009A4004 /* LayerAnimatorGradientConfiguration.swift in Sources */,
+				2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */,
 				B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */,
-				2CF267592090F055009A4004 /* RHInstaLayerAnimatorGradient.swift in Sources */,
+				2CF267592090F055009A4004 /* InstaLayerAnimatorGradient.swift in Sources */,
 				B1ABC94A2040838D00AA388C /* Placeholder.swift in Sources */,
-				2CF267552090F055009A4004 /* RHLayerAnimatorBlinkConfiguration.swift in Sources */,
-				2CF267542090F055009A4004 /* RHLayerAnimatorBlinkConfigurable.swift in Sources */,
+				2CF267552090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift in Sources */,
+				2CF267542090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift in Sources */,
 				B1ABC94C204083C100AA388C /* PlaceholderItem.swift in Sources */,
 				B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */,
-				2CF2675B2090F055009A4004 /* RHLayerAnimatorGradient.swift in Sources */,
-				2CF267562090F055009A4004 /* RHLayerAnimatorGradientConfigurable.swift in Sources */,
-				2CF2675A2090F055009A4004 /* RHCAAnimationDelegateReceiver.swift in Sources */,
-				2CF267582090F055009A4004 /* RHInstaLayerAnimatorGradientConfiguration.swift in Sources */,
+				2CF2675B2090F055009A4004 /* LayerAnimatorGradient.swift in Sources */,
+				2CF267562090F055009A4004 /* LayerAnimatorGradientConfigurable.swift in Sources */,
+				2CF2675A2090F055009A4004 /* CAAnimationDelegateReceiver.swift in Sources */,
+				2CF267582090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,20 +1,20 @@
 import UIKit
 
-struct RHLayerAnimatorBlink: LayerAnimating {
+struct LayerAnimatorBlink: LayerAnimating {
     
     private struct Constants {
         static let basicAnimationKeyPath = "backgroundColor"
         static let gradientAnimationAddKeyPath = "colorChange"
     }
     
-    private let configuration: RHLayerAnimatorBlinkConfigurable
+    private let configuration: LayerAnimatorBlinkConfigurable
     
-    init(configuration: RHLayerAnimatorBlinkConfigurable) {
+    init(configuration: LayerAnimatorBlinkConfigurable) {
         self.configuration = configuration
     }
     
     init() {
-        self.init(configuration: RHLayerAnimatorBlinkConfiguration())
+        self.init(configuration: LayerAnimatorBlinkConfiguration())
     }
     
     func addAnimation(to layer: CALayer) {

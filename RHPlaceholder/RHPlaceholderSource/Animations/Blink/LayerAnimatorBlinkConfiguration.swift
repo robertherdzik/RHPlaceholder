@@ -1,6 +1,6 @@
 import UIKit
 
-struct RHLayerAnimatorBlinkConfiguration: RHLayerAnimatorBlinkConfigurable {
+struct LayerAnimatorBlinkConfiguration: LayerAnimatorBlinkConfigurable {
     
     private(set) var animationDuration: CFTimeInterval = 0.6
     private(set) var blinkColor: CGColor = UIColor.lightGray.cgColor
