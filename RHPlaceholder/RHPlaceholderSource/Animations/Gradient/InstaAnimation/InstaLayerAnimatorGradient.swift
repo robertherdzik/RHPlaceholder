@@ -32,7 +32,7 @@ final class InstaLayerAnimatorGradient: LayerAnimating {
         gradient.frame = layer.bounds
         gradient.startPoint = CGPoint(x:0.1, y:0) // TODO [🌶]: adjust gradient according to element size
         gradient.endPoint = CGPoint(x:0.8, y:0.2)
-        gradient.opacity = 0.2 // TODO [🌶]: move to the configuration
+        gradient.opacity = 0.3 // TODO [🌶]: move to the configuration
         
         layer.addSublayer(gradient)
         
