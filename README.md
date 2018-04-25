@@ -14,4 +14,5 @@ Simple code snippet which gives you ability to support 'loading' state for your 
 - [ ] improve InstaLayerAnimatorGradient, gradient should respect the size of layer in which he is displayed
 - [ ] fix tabbar on iPhone 8 in the example app
 - [ ] fix delay related with adding layers in viewDidLoad 
+- [ ] reduce Library complexity!
  
