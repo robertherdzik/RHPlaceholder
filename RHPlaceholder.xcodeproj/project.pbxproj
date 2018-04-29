@@ -25,6 +25,7 @@
 		B1ABC94A2040838D00AA388C /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC9492040838D00AA388C /* Placeholder.swift */; };
 		B1ABC94C204083C100AA388C /* PlaceholderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC94B204083C100AA388C /* PlaceholderItem.swift */; };
 		B1ABC9502040845500AA388C /* LayerAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABC94F2040845500AA388C /* LayerAnimating.swift */; };
+		B1E82F822095C34D00F8D901 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E82F812095C34D00F8D901 /* UIColor+HEX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B1ABC9492040838D00AA388C /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		B1ABC94B204083C100AA388C /* PlaceholderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderItem.swift; sourceTree = "<group>"; };
 		B1ABC94F2040845500AA388C /* LayerAnimating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimating.swift; sourceTree = "<group>"; };
+		B1E82F812095C34D00F8D901 /* UIColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		2CF267442090F055009A4004 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				B1E82F802095C31700F8D901 /* Utils */,
 				2CF267452090F055009A4004 /* Blink */,
 				2CF267492090F055009A4004 /* Gradient */,
 			);
@@ -159,6 +162,14 @@
 			path = RHPlaceholderSource;
 			sourceTree = "<group>";
 		};
+		B1E82F802095C31700F8D901 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1E82F812095C34D00F8D901 /* UIColor+HEX.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +244,7 @@
 			files = (
 				B1ABC9502040845500AA388C /* LayerAnimating.swift in Sources */,
 				2CF267572090F055009A4004 /* LayerAnimatorGradientConfiguration.swift in Sources */,
+				B1E82F822095C34D00F8D901 /* UIColor+HEX.swift in Sources */,
 				2CF2675D2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */,
 				2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */,
 				B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */,
