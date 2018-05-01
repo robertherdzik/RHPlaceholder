@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
     private func addPlaceholder() {
         let viewElements: [UIView] = [
             photoImgView4,
