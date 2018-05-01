@@ -72,14 +72,18 @@ Please check out the demo project, you can see there how Library has been implem
 
 ---
 ## TODO:
+- URGENT
+- [ ] add API methods for `showLoading()` and `hideLoading()`
 - [x] add shimmering animation
 - [ ] create pod
 - [x] add color configuration
+- [ ] add TableView example
+- [ ] fix delay related with adding layers in viewDidLoad 
+- [ ] fix tabbar on iPhone 8 in the example app
+
+- OPTIONAL
 - [ ] extract gradient animations logic
 - [ ] add posibility to set bg image below animated gradient
-- [ ] add TableView example
 - [ ] improve InstaLayerAnimatorGradient, gradient should respect the size of layer in which he is displayed
-- [ ] fix tabbar on iPhone 8 in the example app
-- [ ] fix delay related with adding layers in viewDidLoad 
-- [ ] reduce Library complexity!
+
  
