@@ -64,6 +64,10 @@ class ViewController: UIViewController {
         }
         photoImgView4.layer.masksToBounds = true
     }
+    
+    deinit {
+        removePhaceholder()
+    }
 }
 
 
