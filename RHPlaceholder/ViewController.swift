@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         roundProfileImageContainers()
         
         // Add placeholder
-        addPlaceholder()
+        registerPlaceholderViews()
+        placeholderMarker.startAnimation()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -38,10 +39,8 @@ class ViewController: UIViewController {
             self.removePhaceholder()
         }
     }
-    
-    
-    
-    private func addPlaceholder() {
+
+    private func registerPlaceholderViews() {
         let viewElements: [UIView] = [
             photoImgView4,
             numberOfMiles,

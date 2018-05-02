@@ -39,6 +39,10 @@ final class InstaLayerAnimatorGradient: LayerAnimating {
         animateGradient()
     }
     
+    func removeGradientLayer() {
+        gradient.removeFromSuperlayer()
+    }
+    
     private func animateGradient() {
         adjustCurrentGradientNumber()
         

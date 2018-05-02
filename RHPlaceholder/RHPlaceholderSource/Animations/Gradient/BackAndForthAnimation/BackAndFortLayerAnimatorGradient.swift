@@ -1,7 +1,7 @@
 import UIKit
 
 final class BackAndFortLayerAnimatorGradient: LayerAnimating {
-    
+
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
         static let gradientAnimationAddKeyPath = "colorChange"
@@ -37,6 +37,11 @@ final class BackAndFortLayerAnimatorGradient: LayerAnimating {
         layer.addSublayer(gradient)
         
         animateGradient()
+    }
+    
+    func removeGradientLayer() {
+        
+        gradient.removeFromSuperlayer()
     }
     
     private func animateGradient() {

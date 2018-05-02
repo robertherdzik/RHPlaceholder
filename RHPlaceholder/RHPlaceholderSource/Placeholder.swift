@@ -32,20 +32,21 @@ final class Placeholder {
     }
     
     func remove() {
-        placeholders.forEach { placeholder in
-            let layer = placeholder.shield
-            layer.removeFromSuperview()
-        }
-        
         removeAnimatorsReferences()
+    }
+    
+    func startAnimation() {
+        animate()
+    }
+    
+    func stopAnimation() {
+        removeAnimation()
     }
     
     private func addLayer() {
         placeholders.forEach { placeholder in
             addShieldViewToOriginView(from: placeholder)
         }
-        
-        animate()
     }
     
     private func addShieldViewToOriginView(from placeholder: PlaceholderItem) {
@@ -69,7 +70,19 @@ final class Placeholder {
         }
     }
     
+    private func removeAnimation() {
+        placeholders.forEach {
+            let layer = $0.shield.layer
+            layer.removeAllAnimations()
+        }
+        
+        animators.forEach() { item in
+            item.removeGradientLayer()
+        }
+    }
+    
     private func removeAnimatorsReferences() {
+        removeAnimation()
         animators.removeAll()
     }
     

@@ -26,4 +26,8 @@ struct LayerAnimatorBlink: LayerAnimating {
         
         layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
     }
+    
+    func removeGradientLayer() {
+        
+    }
 }
