@@ -48,11 +48,22 @@ in your `ViewController`
 call `addPlaceholder()` method in `viewDidLoad()`. 
 Boom 😲 library has been associated with your views 👏
 
-all what left is to controll showing 'loading' animation on your views using `TBC method (method responsible for enabling animation)` and `TBC method(method responsible for disabling animation)`
+all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `stopAnimation()`
 ```swift
-    TBC: add API methods whih will support:
-    - showLoading() 
-    - hideLoading()
+    func fetchUserData() {
+        placeholderMarker.startAnimation()
+        apiManager.fetchUser() { [weak self] user in 
+            self?.stopAnimation()
+            // .. rest of the method
+        }
+    }
+```
+
+keep in mind that you need to clean up your VC after all 😅
+```swift 
+    deinit {
+        placeholderMarker.remove()
+    }
 ```
 
 ### Advanced Configuration
@@ -73,13 +84,15 @@ Please check out the demo project, you can see there how Library has been implem
 ---
 ## TODO:
 - URGENT
-- [ ] add API methods for `showLoading()` and `hideLoading()`
+- [x] add API methods for `showLoading()` and `hideLoading()`
 - [x] add shimmering animation
 - [ ] create pod
 - [x] add color configuration
 - [ ] add TableView example
 - [ ] fix delay related with adding layers in viewDidLoad 
 - [ ] fix tabbar on iPhone 8 in the example app
+- [ ] write documentation
+- [ ] try to improve performance
 
 - OPTIONAL
 - [ ] extract gradient animations logic
