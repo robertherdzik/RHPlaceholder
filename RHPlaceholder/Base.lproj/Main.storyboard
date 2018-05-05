@@ -343,18 +343,34 @@
         <!--Activities-->
         <scene sceneID="qV5-Me-vhH">
             <objects>
-                <viewController id="weL-f5-lvc" sceneMemberID="viewController">
+                <viewController title="Activities" id="weL-f5-lvc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SzW-GK-px0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oWh-Zj-xpf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activities" image="gloves" badgeValue="5" id="qb9-8O-Nrt"/>
+                    <navigationItem key="navigationItem" id="jKc-de-pNL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBO-JB-mrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330" y="1032"/>
+            <point key="canvasLocation" x="1476" y="849.7536945812808"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="VPj-O3-Lko">
+            <objects>
+                <viewController title="Settings" id="jJE-ly-bRH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQ0-Kg-gv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OJb-NB-IQ9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T3m-6p-CPf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69Y-gP-Mf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="1580.5418719211823"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="znj-3c-ee0">
@@ -367,12 +383,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="oV5-rw-iLm" kind="relationship" relationship="viewControllers" id="vk6-aH-xvq"/>
-                        <segue destination="weL-f5-lvc" kind="relationship" relationship="viewControllers" id="Omh-Nn-zfn"/>
+                        <segue destination="UUe-Gk-6ZC" kind="relationship" relationship="viewControllers" id="Omh-Nn-zfn"/>
+                        <segue destination="gPL-um-dQA" kind="relationship" relationship="viewControllers" id="ogj-hO-UW1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEb-77-ijJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558" y="590"/>
+            <point key="canvasLocation" x="-1178" y="850"/>
         </scene>
         <!--Profile-->
         <scene sceneID="FtO-M8-Bxd">
@@ -393,10 +410,49 @@
             </objects>
             <point key="canvasLocation" x="533.60000000000002" y="184.72906403940888"/>
         </scene>
+        <!--Activities-->
+        <scene sceneID="AoX-zE-7p9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UUe-Gk-6ZC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Activities" image="gloves" badgeValue="5" id="qb9-8O-Nrt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bRt-MI-GfS">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="weL-f5-lvc" kind="relationship" relationship="rootViewController" id="8XE-Br-gxW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drc-fG-zif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.60000000000002" y="849.7536945812808"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="U6p-eZ-MPo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPL-um-dQA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="shears" id="tp2-bN-Jbb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ibF-MQ-lZy">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jJE-ly-bRH" kind="relationship" relationship="rootViewController" id="qx4-s8-Pag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJK-3P-A5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.60000000000002" y="1580.5418719211823"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gardener" width="32" height="32"/>
         <image name="gloves" width="32" height="32"/>
         <image name="me" width="472" height="458"/>
+        <image name="shears" width="32" height="32"/>
     </resources>
 </document>
