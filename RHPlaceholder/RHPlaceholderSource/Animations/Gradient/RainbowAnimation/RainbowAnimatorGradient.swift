@@ -51,7 +51,7 @@ final class RainbowAnimatorGradient: LayerAnimating {
         gradient.opacity = 0.4 // TODO [🌶]: move to the configuration
         
         animateGradient()
-
+        
         return gradient
     }
 

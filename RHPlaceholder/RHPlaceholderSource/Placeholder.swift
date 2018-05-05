@@ -13,7 +13,7 @@ final class Placeholder {
     }
     
     convenience init() {
-        self.init(layerAnimator: InstaLayerAnimatorGradient.self)
+        self.init(layerAnimator: RainbowAnimatorGradient.self)
     }
     
     deinit {
@@ -52,7 +52,7 @@ final class Placeholder {
         
         shield.frame = placeholder.originItem.bounds
         placeholder.originItem.addSubview(shield)
-        
+
 //        makeFadeInAnimation(forOriginItem: placeholder.originItem)
     }
     
@@ -75,11 +75,8 @@ final class Placeholder {
     }
     
     private func removeAnimation() {
-        
         _ = placeholders.map {
-            let layer = $0.shield.layer
-            layer.removeAllAnimations()
-            layer.removeFromSuperlayer()
+            $0.shield.removeFromSuperview()
         }
     }
     
