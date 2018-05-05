@@ -19,6 +19,7 @@
 		2CF2675F2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2675E2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift */; };
 		B1349EF3209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1349EF1209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift */; };
 		B1349EF4209DE07A001EA3C9 /* RainbowAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1349EF2209DE07A001EA3C9 /* RainbowAnimatorGradient.swift */; };
+		B161DCA7209E23420055BA87 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B161DCA6209E23420055BA87 /* ViewController1.swift */; };
 		B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CB2029060C00934BBF /* AppDelegate.swift */; };
 		B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CD2029060C00934BBF /* ViewController.swift */; };
 		B1A7B0D12029060C00934BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A7B0CF2029060C00934BBF /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		2CF2675E2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationDelegateReceiver.swift; sourceTree = "<group>"; };
 		B1349EF1209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
 		B1349EF2209DE07A001EA3C9 /* RainbowAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowAnimatorGradient.swift; sourceTree = "<group>"; };
+		B161DCA6209E23420055BA87 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		B1A7B0C82029060C00934BBF /* RHPlaceholder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPlaceholder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A7B0CB2029060C00934BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A7B0CD2029060C00934BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				B1A7B0D22029060C00934BBF /* Assets.xcassets */,
 				B1A7B0D42029060C00934BBF /* LaunchScreen.storyboard */,
 				B1A7B0D72029060C00934BBF /* Info.plist */,
+				B161DCA6209E23420055BA87 /* ViewController1.swift */,
 			);
 			path = RHPlaceholder;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				2CF267532090F055009A4004 /* BlinkAnimator.swift in Sources */,
 				B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */,
 				2CF267592090F055009A4004 /* InstaLayerAnimatorGradient.swift in Sources */,
+				B161DCA7209E23420055BA87 /* ViewController1.swift in Sources */,
 				B1ABC94A2040838D00AA388C /* Placeholder.swift in Sources */,
 				2CF2675F2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift in Sources */,
 				2CF267552090F055009A4004 /* BlinkAnimatorConfiguration.swift in Sources */,
