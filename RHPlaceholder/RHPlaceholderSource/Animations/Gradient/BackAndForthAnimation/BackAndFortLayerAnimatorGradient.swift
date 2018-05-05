@@ -39,11 +39,6 @@ final class BackAndFortLayerAnimatorGradient: LayerAnimating {
         animateGradient()
     }
     
-    func removeGradientLayer() {
-        
-        gradient.removeFromSuperlayer()
-    }
-    
     private func animateGradient() {
         adjustCurrentGradientNumber()
         

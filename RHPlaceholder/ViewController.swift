@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         
         // Add placeholder
         registerPlaceholderViews()
+        // Start animation
         placeholderMarker.startAnimation()
     }
     
@@ -63,10 +64,6 @@ class ViewController: UIViewController {
             $0.layer.cornerRadius = $0.bounds.width/2
         }
         photoImgView4.layer.masksToBounds = true
-    }
-    
-    deinit {
-        removePhaceholder()
     }
 }
 

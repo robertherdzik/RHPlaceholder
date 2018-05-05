@@ -31,16 +31,13 @@ final class Placeholder {
         addLayer()
     }
     
-    func remove() {
-        removeAnimatorsReferences()
-    }
-    
     func startAnimation() {
         animate()
     }
     
-    func stopAnimation() {
+    func remove() {
         removeAnimation()
+        removeAnimatorsReferences()
     }
     
     private func addLayer() {
@@ -57,11 +54,11 @@ final class Placeholder {
         shield.frame = placeholder.originItem.bounds
         placeholder.originItem.addSubview(shield)
         
-        makeFadeInAnimation(forOriginItem: placeholder.originItem)
+//        makeFadeInAnimation(forOriginItem: placeholder.originItem)
     }
     
     private func animate() {
-        placeholders.forEach { [weak self] in
+        _ = placeholders.map { [weak self] in
             let layer = $0.shield.layer
             let animator = self?.layerAnimator.init()
             animators.append(animator!)
@@ -71,26 +68,24 @@ final class Placeholder {
     }
     
     private func removeAnimation() {
-        placeholders.forEach {
+        _ = placeholders.map {
             let layer = $0.shield.layer
             layer.removeAllAnimations()
-        }
-        
-        animators.forEach() { item in
-            item.removeGradientLayer()
+            layer.removeFromSuperlayer()
         }
     }
     
     private func removeAnimatorsReferences() {
         removeAnimation()
         animators.removeAll()
+        placeholders.removeAll()
     }
     
-    // TODO [🌶]: Quick fix for 'jump in' showing of layers, should be better way to do this [Investigation needed]
-    private func makeFadeInAnimation(forOriginItem originItem: UIView) {
-        originItem.alpha = 0
-        UIView.animate(withDuration: 3) {
-            originItem.alpha = 1
-        }
-    }
+//    // TODO [🌶]: Quick fix for 'jump in' showing of layers, should be better way to do this [Investigation needed]
+//    private func makeFadeInAnimation(forOriginItem originItem: UIView) {
+//        originItem.alpha = 0
+//        UIView.animate(withDuration: 3) {
+//            originItem.alpha = 1
+//        }
+//    }
 }

@@ -48,21 +48,14 @@ in your `ViewController`
 call `addPlaceholder()` method in `viewDidLoad()`. 
 Boom 😲 library has been associated with your views 👏
 
-all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `stopAnimation()`
+all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `remove()`
 ```swift
     func fetchUserData() {
         placeholderMarker.startAnimation()
         apiManager.fetchUser() { [weak self] user in 
-            self?.stopAnimation()
+            self?.placeholderMarker.remove()
             // .. rest of the method
         }
-    }
-```
-
-keep in mind that you need to clean up your VC after all 😅
-```swift 
-    deinit {
-        placeholderMarker.remove()
     }
 ```
 
