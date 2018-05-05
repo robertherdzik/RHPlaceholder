@@ -39,9 +39,9 @@ Available animations:
 TBC (add animation)
 - `RainbowAnimatorGradient`
 TBC (add animation)
-- `LayerAnimatorBlink`
-TBC (add animation)
 - `BackAndFortLayerAnimatorGradient`
+TBC (add animation)
+- `BlinkAnimator`
 TBC (add animation)
 
 
