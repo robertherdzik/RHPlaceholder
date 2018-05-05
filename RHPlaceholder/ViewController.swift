@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         view.clipsToBounds = true
         roundProfileImageContainers()
-        
+    
         // Add placeholder
         registerPlaceholderViews()
         // Start animation

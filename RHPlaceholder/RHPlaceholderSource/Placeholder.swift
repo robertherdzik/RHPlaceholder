@@ -67,6 +67,7 @@ final class Placeholder {
             animators.append(animator!)
             
             if let animatedLayer = animator?.getAnimatedLayer(withReferenceFrame: referenceFrame) {
+                layer.cornerRadius = 5 // TODO [🌶]: oportunity to customize `cornerRadius`
                 layer.backgroundColor = animator?.originLayerColor
                 layer.addSublayer(animatedLayer)
                 layer.masksToBounds = true

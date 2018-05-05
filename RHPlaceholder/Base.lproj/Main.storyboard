@@ -22,14 +22,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xfx-tf-MzA">
                                 <rect key="frame" x="100" y="337" width="259" height="95"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Robert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp4-Kw-TGO">
-                                        <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="28.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Matt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp4-Kw-TGO">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="28.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herdzik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT9-8D-J8q">
-                                        <rect key="frame" x="0.0" y="33.333333333333314" width="129.33333333333334" height="28.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rostowski" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT9-8D-J8q">
+                                        <rect key="frame" x="0.0" y="33.333333333333314" width="173.66666666666666" height="28.333333333333329"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -104,21 +104,21 @@
                                             <constraint firstAttribute="height" constant="240" id="Ooc-ME-MK9"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="236" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzN-gR-yDg">
-                                        <rect key="frame" x="257" y="87.666666666666657" width="69" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="236.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzN-gR-yDg">
+                                        <rect key="frame" x="197" y="79" width="144" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-sj-vcw">
-                                        <rect key="frame" x="295" y="129.66666666666666" width="40" height="20.333333333333343"/>
+                                        <rect key="frame" x="310" y="139" width="40" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="JzN-gR-yDg" secondAttribute="trailing" constant="49" id="6AE-IK-F8b"/>
+                                    <constraint firstAttribute="trailing" secondItem="JzN-gR-yDg" secondAttribute="trailing" constant="34" id="6AE-IK-F8b"/>
                                     <constraint firstItem="JzN-gR-yDg" firstAttribute="centerY" secondItem="FMv-xD-AiJ" secondAttribute="centerY" id="HbM-DE-U8r"/>
                                     <constraint firstItem="TzZ-sj-vcw" firstAttribute="trailing" secondItem="JzN-gR-yDg" secondAttribute="trailing" constant="9" id="Hzd-dq-Pav"/>
                                     <constraint firstItem="TzZ-sj-vcw" firstAttribute="top" secondItem="JzN-gR-yDg" secondAttribute="bottom" id="Rd0-hm-KHj"/>
@@ -149,7 +149,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="robert.foo@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRM-fe-KUm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="matt.rostowski@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRM-fe-KUm">
                                                 <rect key="frame" x="39" y="0.0" width="248" height="32.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
