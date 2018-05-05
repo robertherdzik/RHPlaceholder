@@ -6,7 +6,7 @@
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 
 # RHPlaceholder 💾
-Because tradicional `loading view` like `UIActivityIndicatorView` or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from this traditional approach in favour of loading way which is offered by this library), I decided to create very simple library which will give you oportunity to have it in your great project without big effort! 🍕 
+Because tradicional `loading view` like `UIActivityIndicatorView` or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort 💥! 🍕 
 
 ## Play with it 😎
 TBC
@@ -17,7 +17,7 @@ TBC
 ## Installation
 You can install library using Cocoapods:
 ```
-    pod 'RHPlaceholder'
+pod 'RHPlaceholder'
 ```
 
 ## Usage
@@ -26,12 +26,12 @@ WOW... it is soo easy to use 🙊! Base integration with you storyboard VC will 
 ### Base Usage
 just create instance const of `Placeholder` in your `ViewController`:
 ```swift
-    private let placeholderMarker = Placeholder() // By default you will have Insta like gradient animation
+private let placeholderMarker = Placeholder() // By default you will have Insta like gradient animation
 ```
 
 but of course you can choose between rest of predefined animations:
 ```swift
-    private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
+private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
 ```
 
 Available animations: 
@@ -48,30 +48,30 @@ TBC (add animation)
 ... and then just bind up library with views which needs to be animated:
 
 ```swift
-    private func addPlaceholder() {
-        let viewElements: [UIView] = [
-            name,
-            surname,
-            age,
-            email,
-            birthDate
-        ]
+private func addPlaceholder() {
+    let viewElements: [UIView] = [
+        name,
+        surname,
+        age,
+        email,
+        birthDate
+    ]
         
-        placeholderMarker.register(viewElements)
-    }
+    placeholderMarker.register(viewElements)
+}
 ```
 call `addPlaceholder()` method in `viewDidLoad()`. 
 Boom 😲 library has been associated with your views 👏
 
 all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `remove()`
 ```swift
-    func fetchUserData() {
-        placeholderMarker.startAnimation()
-        apiManager.fetchUser() { [weak self] user in 
-            self?.placeholderMarker.remove()
-            // .. rest of the method
-        }
+func fetchUserData() {
+    placeholderMarker.startAnimation()
+    apiManager.fetchUser() { [weak self] user in 
+        self?.placeholderMarker.remove()
+        // .. rest of the method
     }
+}
 ```
 
 ### Advanced Configuration
