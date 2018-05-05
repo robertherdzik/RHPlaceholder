@@ -75,6 +75,7 @@ final class Placeholder {
     }
     
     private func removeAnimation() {
+        
         _ = placeholders.map {
             let layer = $0.shield.layer
             layer.removeAllAnimations()

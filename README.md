@@ -100,10 +100,11 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 - [ ] create pod
 - [x] add color configuration
 - [ ] add TableView example
-- [ ] fix delay related with adding layers in viewDidLoad 
-- [ ] fix tabbar on iPhone 8 in the example app
+- [x] fix delay related with adding layers in viewDidLoad 
+- [x] fix tabbar on iPhone 8 in the example app
 - [ ] write documentation
-- [ ] try to improve performance
+- [x] improve performance
+- [ ] add icons for tabbar items
 
 - OPTIONAL
 - [ ] extract gradient animations logic
