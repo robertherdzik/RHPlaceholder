@@ -13,7 +13,7 @@ final class Placeholder {
     }
     
     convenience init() {
-        self.init(layerAnimator: RainbowAnimatorGradient.self)
+        self.init(layerAnimator: InstaLayerAnimatorGradient.self)
     }
     
     deinit {
