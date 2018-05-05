@@ -350,7 +350,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oWh-Zj-xpf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activities" id="qb9-8O-Nrt"/>
+                    <tabBarItem key="tabBarItem" title="Activities" image="gloves" badgeValue="5" id="qb9-8O-Nrt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBO-JB-mrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,7 +378,7 @@
         <scene sceneID="FtO-M8-Bxd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oV5-rw-iLm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="OKa-oS-wOe"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="gardener" id="OKa-oS-wOe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mly-XS-pQh">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -395,6 +395,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gardener" width="32" height="32"/>
+        <image name="gloves" width="32" height="32"/>
         <image name="me" width="472" height="458"/>
     </resources>
 </document>
