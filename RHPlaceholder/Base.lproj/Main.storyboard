@@ -86,7 +86,7 @@
                                                         <rect key="frame" x="17" y="19" width="189" height="185"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-aX-k42">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-aX-k42">
                                                                 <rect key="frame" x="17" y="15" width="155" height="155"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
@@ -450,9 +450,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="boy" width="256" height="256"/>
         <image name="gardener" width="32" height="32"/>
         <image name="gloves" width="32" height="32"/>
-        <image name="me" width="472" height="458"/>
         <image name="shears" width="32" height="32"/>
     </resources>
 </document>

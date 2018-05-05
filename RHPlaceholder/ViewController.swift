@@ -22,9 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.clipsToBounds = true
-        roundProfileImageContainers()
+       
+        setupVC()
     
         // Add placeholder
         registerPlaceholderViews()
@@ -64,6 +63,14 @@ class ViewController: UIViewController {
             $0.layer.cornerRadius = $0.bounds.width/2
         }
         photoImgView4.layer.masksToBounds = true
+    }
+    
+    private func setupVC() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        
+        view.clipsToBounds = true
+        roundProfileImageContainers()
     }
 }
 
