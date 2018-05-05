@@ -1,6 +1,8 @@
 import UIKit
  
 protocol LayerAnimating {
+    var originLayerColor: CGColor { get }
+    
     init()
-    func addAnimation(to layer: CALayer)
+    func getAnimatedLayer(withReferenceFrame frame: CGRect) -> CALayer
 }

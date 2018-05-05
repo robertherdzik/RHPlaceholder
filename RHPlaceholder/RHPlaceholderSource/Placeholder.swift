@@ -58,12 +58,19 @@ final class Placeholder {
     }
     
     private func animate() {
+        let referenceFrame = CGRect(origin: CGPoint.zero,
+                                    size: getFinalGradientSize())
+        
         _ = placeholders.map { [weak self] in
             let layer = $0.shield.layer
             let animator = self?.layerAnimator.init()
             animators.append(animator!)
             
-            animator?.addAnimation(to: layer)
+            if let animatedLayer = animator?.getAnimatedLayer(withReferenceFrame: referenceFrame) {
+                layer.backgroundColor = animator?.originLayerColor
+                layer.addSublayer(animatedLayer)
+                layer.masksToBounds = true
+            }
         }
     }
     
@@ -81,6 +88,25 @@ final class Placeholder {
         placeholders.removeAll()
     }
     
+    private func getFinalGradientSize() -> CGSize {
+        let gratestWidth = getGratestWidth()
+        let gratestHeigth = getGratestHeight()
+        
+        return CGSize(width: gratestWidth,
+                      height: gratestHeigth)
+    }
+    
+    private func getGratestWidth() -> CGFloat {
+        return placeholders.sorted { first, second -> Bool in
+            first.originItem.bounds.width > second.originItem.bounds.width
+            }.first?.shield.bounds.width ?? 0
+    }
+    
+    private func getGratestHeight() -> CGFloat {
+        return placeholders.sorted { first, second -> Bool in
+            first.originItem.bounds.height > second.originItem.bounds.height
+            }.first?.shield.bounds.height ?? 0
+    }
 //    // TODO [🌶]: Quick fix for 'jump in' showing of layers, should be better way to do this [Investigation needed]
 //    private func makeFadeInAnimation(forOriginItem originItem: UIView) {
 //        originItem.alpha = 0

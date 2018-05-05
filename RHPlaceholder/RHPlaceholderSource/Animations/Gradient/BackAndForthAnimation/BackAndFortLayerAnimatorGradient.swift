@@ -1,7 +1,9 @@
 import UIKit
 
 final class BackAndFortLayerAnimatorGradient: LayerAnimating {
-
+    
+    var originLayerColor: CGColor
+    
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
         static let gradientAnimationAddKeyPath = "colorChange"
@@ -20,6 +22,7 @@ final class BackAndFortLayerAnimatorGradient: LayerAnimating {
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
+        originLayerColor = configuration.fromColor
         
         setupAnimationDelegateReceiver()
     }
@@ -28,6 +31,17 @@ final class BackAndFortLayerAnimatorGradient: LayerAnimating {
         self.init(configuration: BackAndForthLayerAnimatorGradientConfiguration())
     }
     
+    // TODO [🌶]: update class
+    func getAnimatedLayer(withReferenceFrame frame: CGRect) -> CALayer {
+        gradient.frame = frame
+        gradient.startPoint = CGPoint(x:0, y:0)
+        gradient.endPoint = CGPoint(x:1, y:1)
+        gradient.opacity = 0.4
+        
+        animateGradient()
+        
+        return gradient
+    }
     func addAnimation(to layer: CALayer) {
         gradient.frame = layer.bounds
         gradient.startPoint = CGPoint(x:0, y:0)

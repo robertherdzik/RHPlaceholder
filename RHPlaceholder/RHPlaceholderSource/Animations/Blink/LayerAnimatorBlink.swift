@@ -2,6 +2,8 @@ import UIKit
 
 struct LayerAnimatorBlink: LayerAnimating {
     
+    let originLayerColor: CGColor
+    
     private struct Constants {
         static let basicAnimationKeyPath = "backgroundColor"
         static let gradientAnimationAddKeyPath = "colorChange"
@@ -11,19 +13,23 @@ struct LayerAnimatorBlink: LayerAnimating {
     
     init(configuration: LayerAnimatorBlinkConfigurable) {
         self.configuration = configuration
+        originLayerColor = UIColor.white.cgColor
     }
     
     init() {
         self.init(configuration: LayerAnimatorBlinkConfiguration())
     }
     
-    func addAnimation(to layer: CALayer) {
+    func getAnimatedLayer(withReferenceFrame frame: CGRect) -> CALayer {
         let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
         animation.duration = configuration.animationDuration
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        animation.repeatCount = Float.greatestFiniteMagnitude
+        animation.repeatCount = Float.infinity
         animation.toValue = configuration.blinkColor
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
+        let layer = UIView(frame: frame).layer
         layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
+        
+        return layer
     }
 }

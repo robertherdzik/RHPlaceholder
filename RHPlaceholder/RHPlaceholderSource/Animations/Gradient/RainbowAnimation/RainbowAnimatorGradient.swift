@@ -1,6 +1,9 @@
 import UIKit
 // TODO [🌶]:  implement rainbow
 final class RainbowAnimatorGradient: LayerAnimating {
+    
+    var originLayerColor: CGColor
+    
     // TODO [🌶]: duplication
     private struct Constants {
         static let basicAnimationKeyPath = "colors"
@@ -12,14 +15,26 @@ final class RainbowAnimatorGradient: LayerAnimating {
     private let gradient = CAGradientLayer()
     
     private lazy var gradientColors = [
-        [configuration.fromColor, configuration.toColor],
-        [configuration.toColor, configuration.fromColor]
+        [configuration.fromColor,
+         UIColor(rgb: 0x3333ff).withAlphaComponent(0.5).cgColor,
+         UIColor.magenta.cgColor,
+         UIColor.purple.cgColor,
+         UIColor.cyan.cgColor,
+         configuration.toColor],
+       
+        [UIColor.red.cgColor,
+         UIColor(rgb: 0xffff00).cgColor,
+         configuration.toColor,
+         UIColor.cyan.cgColor,
+         UIColor.magenta.cgColor,
+         configuration.fromColor]
     ]
     private var currentGradient: Int = 0
     private var animationDelegate: CAAnimationDelegateReceiver?
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
+        originLayerColor = UIColor.white.cgColor
         
         setupAnimationDelegateReceiver()
     }
@@ -28,16 +43,16 @@ final class RainbowAnimatorGradient: LayerAnimating {
         self.init(configuration: RainbowAnimatorGradientConfiguration())
     }
     
-    func addAnimation(to layer: CALayer) { // TODO [🌶]: extract using abstraction
-        
-        gradient.frame = layer.bounds
+    func getAnimatedLayer(withReferenceFrame frame: CGRect) -> CALayer {
+        gradient.frame = frame
         gradient.startPoint = CGPoint(x:0.1, y:0) // TODO [🌶]: adjust gradient according to element size
         gradient.endPoint = CGPoint(x:0.8, y:0.2)
-        gradient.opacity = 0.3 // TODO [🌶]: move to the configuration
-        
-        layer.addSublayer(gradient)
+        gradient.locations = [0, 0.2, 0.4, 0.6, 0.8, 1]
+        gradient.opacity = 0.4 // TODO [🌶]: move to the configuration
         
         animateGradient()
+
+        return gradient
     }
 
     private func animateGradient() {

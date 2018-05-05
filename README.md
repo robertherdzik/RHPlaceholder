@@ -24,11 +24,26 @@ You can install library using Cocoapods:
 WOW... it is soo easy to use 🙊! Base integration with you storyboard VC will take couple minutes 💥
 
 ### Base Usage
-just create instance const of `Placeholder`:
+just create instance const of `Placeholder` in your `ViewController`:
 ```swift
-    private let placeholderMarker = Placeholder()
+    private let placeholderMarker = Placeholder() // By default you will have Insta like gradient animation
 ```
-in your `ViewController` 
+
+but of course you can choose between rest of predefined animations:
+```swift
+    private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
+```
+
+Available animations: 
+- `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
+TBC (add animation)
+- `RainbowAnimatorGradient`
+TBC (add animation)
+- `LayerAnimatorBlink`
+TBC (add animation)
+- `BackAndFortLayerAnimatorGradient`
+TBC (add animation)
+
 
 ... and then just bind up library with views which needs to be animated:
 
@@ -73,6 +88,9 @@ TBC
 ## Check the Demo project
 
 Please check out the demo project, you can see there how Library has been implemented in details.
+
+### Layout Inspiration
+Layout inspiration has been taken from one of the Dribbble projects, unfortunately I cannot find now this project anymore, because of that I cannot annotate creator in here 😦...
 
 ---
 ## TODO:
