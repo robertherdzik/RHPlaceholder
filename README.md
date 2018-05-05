@@ -20,7 +20,7 @@ pod 'RHPlaceholder'
 ```
 
 ## Usage
-WOW... it is soo easy to use 🙊! Base integration with you storyboard VC will take couple minutes 💥
+WOW... it is soo easy to use 🙊! Base integration with your storyboard VC will take couple minutes 💥
 
 ### Base Usage
 just create instance const of `Placeholder` in your `ViewController`:
@@ -28,12 +28,12 @@ just create instance const of `Placeholder` in your `ViewController`:
 private let placeholderMarker = Placeholder() // By default you will have Insta like gradient animation
 ```
 
-but of course you can choose between rest of predefined animations:
+bear in mind, that you can choose between couple of predefined animations (like e.g. RainbowAnimatorGradient):
 ```swift
 private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
 ```
 
-Available animations: 
+List of available animatotrs: 
 - `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
 TBC (add animation)
 - `RainbowAnimatorGradient`
@@ -44,7 +44,7 @@ TBC (add animation)
 TBC (add animation)
 
 
-... and then just bind up library with views which needs to be animated:
+... and then just bind up library with your views which needs to be animated:
 
 ```swift
 private func addPlaceholder() {
@@ -62,7 +62,7 @@ private func addPlaceholder() {
 call `addPlaceholder()` method in `viewDidLoad()`. 
 Boom 😲 library has been associated with your views 👏
 
-all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `remove()`
+all what left, is to controll showing 'loading state' animation on your views using `startAnimation()` and `remove()`
 ```swift
 func fetchUserData() {
     placeholderMarker.startAnimation()
