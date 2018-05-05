@@ -102,8 +102,6 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 - Cool 😎 profile icon from:
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
----
-
 
 ---
 ## TODO:
@@ -117,7 +115,7 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 - [x] fix tabbar on iPhone 8 in the example app
 - [ ] write documentation
 - [x] improve performance
-- [ ] add icons for tabbar items
+- [x] add icons for tabbar items
 
 - OPTIONAL
 - [ ] extract gradient animations logic
