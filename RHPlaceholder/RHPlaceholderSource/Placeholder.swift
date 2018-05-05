@@ -27,11 +27,10 @@ final class Placeholder {
             let placeholderItem = PlaceholderItem(originItem: $0)
             self.placeholders.append(placeholderItem)
         }
-        
-        addLayer()
     }
     
     func startAnimation() {
+        addLayer()
         animate()
     }
     
