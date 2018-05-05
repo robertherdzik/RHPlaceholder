@@ -17,6 +17,8 @@
 		2CF2675B2090F055009A4004 /* BackAndFortLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267522090F055009A4004 /* BackAndFortLayerAnimatorGradient.swift */; };
 		2CF2675D2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2675C2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift */; };
 		2CF2675F2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2675E2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift */; };
+		B1349EF3209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1349EF1209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift */; };
+		B1349EF4209DE07A001EA3C9 /* RainbowAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1349EF2209DE07A001EA3C9 /* RainbowAnimatorGradient.swift */; };
 		B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CB2029060C00934BBF /* AppDelegate.swift */; };
 		B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7B0CD2029060C00934BBF /* ViewController.swift */; };
 		B1A7B0D12029060C00934BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A7B0CF2029060C00934BBF /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		2CF267522090F055009A4004 /* BackAndFortLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAndFortLayerAnimatorGradient.swift; sourceTree = "<group>"; };
 		2CF2675C2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAndForthLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
 		2CF2675E2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationDelegateReceiver.swift; sourceTree = "<group>"; };
+		B1349EF1209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
+		B1349EF2209DE07A001EA3C9 /* RainbowAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowAnimatorGradient.swift; sourceTree = "<group>"; };
 		B1A7B0C82029060C00934BBF /* RHPlaceholder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPlaceholder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A7B0CB2029060C00934BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A7B0CD2029060C00934BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF2674A2090F055009A4004 /* Common */,
+				B1349EF0209DE07A001EA3C9 /* RainbowAnimation */,
 				2CF2674D2090F055009A4004 /* InstaAnimation */,
 				2CF267502090F055009A4004 /* BackAndForthAnimation */,
 			);
@@ -119,6 +124,15 @@
 				2CF267522090F055009A4004 /* BackAndFortLayerAnimatorGradient.swift */,
 			);
 			path = BackAndForthAnimation;
+			sourceTree = "<group>";
+		};
+		B1349EF0209DE07A001EA3C9 /* RainbowAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B1349EF1209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift */,
+				B1349EF2209DE07A001EA3C9 /* RainbowAnimatorGradient.swift */,
+			);
+			path = RainbowAnimation;
 			sourceTree = "<group>";
 		};
 		B1A7B0BF2029060C00934BBF = {
@@ -245,6 +259,7 @@
 				B1ABC9502040845500AA388C /* LayerAnimating.swift in Sources */,
 				2CF267572090F055009A4004 /* LayerAnimatorGradientConfiguration.swift in Sources */,
 				B1E82F822095C34D00F8D901 /* UIColor+HEX.swift in Sources */,
+				B1349EF4209DE07A001EA3C9 /* RainbowAnimatorGradient.swift in Sources */,
 				2CF2675D2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */,
 				2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */,
 				B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */,
@@ -253,6 +268,7 @@
 				2CF2675F2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift in Sources */,
 				2CF267552090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift in Sources */,
 				2CF267542090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift in Sources */,
+				B1349EF3209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift in Sources */,
 				B1ABC94C204083C100AA388C /* PlaceholderItem.swift in Sources */,
 				B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */,
 				2CF2675B2090F055009A4004 /* BackAndFortLayerAnimatorGradient.swift in Sources */,

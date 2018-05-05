@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:/Users/robert.herdzik/Documents/Git/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/RHAnimationGradient"
-      name = "RHAnimationGradient">
-   </Group>
    <FileRef
       location = "self:">
    </FileRef>

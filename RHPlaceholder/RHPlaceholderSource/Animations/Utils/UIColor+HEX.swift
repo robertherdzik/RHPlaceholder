@@ -1,6 +1,10 @@
 import UIKit
 
 extension UIColor {
+
+    /// Usage:
+    /// let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
+    /// let color2 = UIColor(rgb: 0xFFFFFF)
     
     convenience init(red: Int, green: Int, blue: Int) {
         let decimalRange = 0...255
