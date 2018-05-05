@@ -11,7 +11,7 @@ Because tradicional `loading view` like `UIActivityIndicatorView` or similar one
 ## Play with it 😎
 TBC
 <p align="center">
-<img src ="./ReadmeAssets/logo.gif" width="360" height="360"/>
+<img src ="./ReadmeAssets/logoBorders.gif" width="360" height="360"/>
 </p>
 
 ## Installation
