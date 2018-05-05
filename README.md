@@ -9,9 +9,8 @@
 Because tradicional `loading view` like `UIActivityIndicatorView` or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort 💥! 🍕 
 
 ## Play with it 😎
-TBC
 <p align="center">
-<img src ="./ReadmeAssets/Logo.gif" width="360" height="360"/>
+<img src ="./ReadmeAssets/Logo.gif" width="200" height="200"/>
 </p>
 
 ## Installation
