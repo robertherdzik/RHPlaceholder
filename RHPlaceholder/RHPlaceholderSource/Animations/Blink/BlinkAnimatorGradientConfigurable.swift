@@ -1,6 +1,6 @@
 import UIKit
 
-protocol LayerAnimatorBlinkConfigurable {
+protocol BlinkAnimatorGradientConfigurable {
     var animationDuration: CFTimeInterval { get }
     var blinkColor: CGColor { get }
 }

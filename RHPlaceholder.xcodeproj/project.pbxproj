@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */; };
-		2CF267542090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */; };
-		2CF267552090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */; };
+		2CF267532090F055009A4004 /* BlinkAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267462090F055009A4004 /* BlinkAnimatorGradient.swift */; };
+		2CF267542090F055009A4004 /* BlinkAnimatorGradientConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267472090F055009A4004 /* BlinkAnimatorGradientConfigurable.swift */; };
+		2CF267552090F055009A4004 /* BlinkAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF267482090F055009A4004 /* BlinkAnimatorGradientConfiguration.swift */; };
 		2CF267562090F055009A4004 /* LayerAnimatorGradientConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674B2090F055009A4004 /* LayerAnimatorGradientConfigurable.swift */; };
 		2CF267572090F055009A4004 /* LayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674C2090F055009A4004 /* LayerAnimatorGradientConfiguration.swift */; };
 		2CF267582090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2674E2090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift */; };
@@ -31,9 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlink.swift; sourceTree = "<group>"; };
-		2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlinkConfigurable.swift; sourceTree = "<group>"; };
-		2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorBlinkConfiguration.swift; sourceTree = "<group>"; };
+		2CF267462090F055009A4004 /* BlinkAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkAnimatorGradient.swift; sourceTree = "<group>"; };
+		2CF267472090F055009A4004 /* BlinkAnimatorGradientConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkAnimatorGradientConfigurable.swift; sourceTree = "<group>"; };
+		2CF267482090F055009A4004 /* BlinkAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
 		2CF2674B2090F055009A4004 /* LayerAnimatorGradientConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorGradientConfigurable.swift; sourceTree = "<group>"; };
 		2CF2674C2090F055009A4004 /* LayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
 		2CF2674E2090F055009A4004 /* InstaLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
@@ -80,9 +80,9 @@
 		2CF267452090F055009A4004 /* Blink */ = {
 			isa = PBXGroup;
 			children = (
-				2CF267462090F055009A4004 /* LayerAnimatorBlink.swift */,
-				2CF267472090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift */,
-				2CF267482090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift */,
+				2CF267462090F055009A4004 /* BlinkAnimatorGradient.swift */,
+				2CF267472090F055009A4004 /* BlinkAnimatorGradientConfigurable.swift */,
+				2CF267482090F055009A4004 /* BlinkAnimatorGradientConfiguration.swift */,
 			);
 			path = Blink;
 			sourceTree = "<group>";
@@ -261,13 +261,13 @@
 				B1E82F822095C34D00F8D901 /* UIColor+HEX.swift in Sources */,
 				B1349EF4209DE07A001EA3C9 /* RainbowAnimatorGradient.swift in Sources */,
 				2CF2675D2090F6A5009A4004 /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */,
-				2CF267532090F055009A4004 /* LayerAnimatorBlink.swift in Sources */,
+				2CF267532090F055009A4004 /* BlinkAnimatorGradient.swift in Sources */,
 				B1A7B0CE2029060C00934BBF /* ViewController.swift in Sources */,
 				2CF267592090F055009A4004 /* InstaLayerAnimatorGradient.swift in Sources */,
 				B1ABC94A2040838D00AA388C /* Placeholder.swift in Sources */,
 				2CF2675F2090F6D0009A4004 /* CAAnimationDelegateReceiver.swift in Sources */,
-				2CF267552090F055009A4004 /* LayerAnimatorBlinkConfiguration.swift in Sources */,
-				2CF267542090F055009A4004 /* LayerAnimatorBlinkConfigurable.swift in Sources */,
+				2CF267552090F055009A4004 /* BlinkAnimatorGradientConfiguration.swift in Sources */,
+				2CF267542090F055009A4004 /* BlinkAnimatorGradientConfigurable.swift in Sources */,
 				B1349EF3209DE07A001EA3C9 /* RainbowAnimatorGradientConfiguration.swift in Sources */,
 				B1ABC94C204083C100AA388C /* PlaceholderItem.swift in Sources */,
 				B1A7B0CC2029060C00934BBF /* AppDelegate.swift in Sources */,

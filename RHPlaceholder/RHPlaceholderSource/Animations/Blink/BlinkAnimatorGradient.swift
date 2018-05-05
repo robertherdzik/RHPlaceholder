@@ -1,6 +1,6 @@
 import UIKit
 
-struct LayerAnimatorBlink: LayerAnimating {
+struct BlinkAnimatorGradient: LayerAnimating {
     
     let originLayerColor: CGColor
     
@@ -9,15 +9,15 @@ struct LayerAnimatorBlink: LayerAnimating {
         static let gradientAnimationAddKeyPath = "colorChange"
     }
     
-    private let configuration: LayerAnimatorBlinkConfigurable
+    private let configuration: BlinkAnimatorGradientConfigurable
     
-    init(configuration: LayerAnimatorBlinkConfigurable) {
+    init(configuration: BlinkAnimatorGradientConfigurable) {
         self.configuration = configuration
         originLayerColor = UIColor.white.cgColor
     }
     
     init() {
-        self.init(configuration: LayerAnimatorBlinkConfiguration())
+        self.init(configuration: BlinkAnimatorGradientConfiguration())
     }
     
     func getAnimatedLayer(withReferenceFrame frame: CGRect) -> CALayer {
