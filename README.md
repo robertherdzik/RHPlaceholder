@@ -10,7 +10,7 @@ Because tradicional `loading view` like `UIActivityIndicatorView` or similar one
 
 ## Play with it 😎
 <p align="center">
-<img src ="./ReadmeAssets/Logo.gif" width="200" height="200"/>
+<img src ="./ReadmeAssets/Logo.gif" width="160" height="160"/>
 </p>
 
 ## Installation
