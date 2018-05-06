@@ -65,26 +65,26 @@ func fetchUserData() {
 #### List of available animatotrs: 
 ##### (`default`) InstaLayerAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/insta1.gif" width="202" height="430"/>
-<img src ="./ReadmeAssets/insta2.gif" width="202" height="430"/>
+<img src ="./ReadmeAssets/insta1.gif" width="193" height="370"/>
+<img src ="./ReadmeAssets/insta2.gif" width="193" height="370"/>
 </p>
 
 ##### BackAndFortLayerAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/bf1.gif" width="202" height="430"/>
-<img src ="./ReadmeAssets/bf2.gif" width="202" height="430"/>
+<img src ="./ReadmeAssets/bf1.gif" width="193" height="370"/>
+<img src ="./ReadmeAssets/bf2.gif" width="193" height="370"/>
 </p>
 
 ##### BlinkAnimator
 <p align="center">
-<img src ="./ReadmeAssets/blink1.gif" width="202" height="430"/>
-<img src ="./ReadmeAssets/blink2.gif" width="202" height="430"/>
+<img src ="./ReadmeAssets/blink1.gif" width="193" height="370"/>
+<img src ="./ReadmeAssets/blink2.gif" width="193" height="370"/>
 </p>
 
 ##### RainbowAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/Rainbow1.gif" width="202" height="430"/>
-<img src ="./ReadmeAssets/rainbow2.gif" width="202" height="430"/>
+<img src ="./ReadmeAssets/Rainbow1.gif" width="193" height="370"/>
+<img src ="./ReadmeAssets/rainbow2.gif" width="193" height="370"/>
 </p>
 
 ### Advanced Configuration
