@@ -1,4 +1,6 @@
-![](./ReadmeAssets/RHPlaceholder.png)
+<p align="center">
+<img src ="./ReadmeAssets/Logo.gif" width="150" height="150"/>
+</p>
 
 [![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](http://cocoadocs.org/docsets/RHPlaceholder)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
@@ -9,9 +11,7 @@
 Because tradicional `loading view` like `UIActivityIndicatorView` or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort 💥! 🍕 
 
 ## Play with it 😎
-<p align="center">
-<img src ="./ReadmeAssets/Logo.gif" width="150" height="150"/>
-</p>
+
 
 ## Installation
 You can install library using Cocoapods:
@@ -20,7 +20,7 @@ pod 'RHPlaceholder'
 ```
 
 ## Usage
-WOW... it is soo easy to use 🙊! Base integration with you storyboard VC will take couple minutes 💥
+WOW... it is soo easy to use 🙊! Base integration with your storyboard VC will take couple minutes 💥
 
 ### Base Usage
 just create instance const of `Placeholder` in your `ViewController`:
@@ -28,12 +28,12 @@ just create instance const of `Placeholder` in your `ViewController`:
 private let placeholderMarker = Placeholder() // By default you will have Insta like gradient animation
 ```
 
-but of course you can choose between rest of predefined animations:
+bear in mind, that you can choose between couple of predefined animations (like e.g. RainbowAnimatorGradient):
 ```swift
 private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
 ```
 
-Available animations: 
+List of available animatotrs: 
 - `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
 TBC (add animation)
 - `RainbowAnimatorGradient`
@@ -44,7 +44,7 @@ TBC (add animation)
 TBC (add animation)
 
 
-... and then just bind up library with views which needs to be animated:
+... and then just bind up library with your views which needs to be animated:
 
 ```swift
 private func addPlaceholder() {
@@ -62,7 +62,7 @@ private func addPlaceholder() {
 call `addPlaceholder()` method in `viewDidLoad()`. 
 Boom 😲 library has been associated with your views 👏
 
-all what left is to controll showing 'loading' animation on your views using `startAnimation()` and `remove()`
+all what left, is to controll showing 'loading state' animation on your views using `startAnimation()` and `remove()`
 ```swift
 func fetchUserData() {
     placeholderMarker.startAnimation()
