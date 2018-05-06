@@ -33,17 +33,6 @@ bear in mind, that you can choose between couple of predefined animations (like 
 private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
 ```
 
-List of available animatotrs: 
-- `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
-TBC (add animation)
-- `RainbowAnimatorGradient`
-TBC (add animation)
-- `BackAndFortLayerAnimatorGradient`
-TBC (add animation)
-- `BlinkAnimator`
-TBC (add animation)
-
-
 ... and then just bind up library with your views which needs to be animated:
 
 ```swift
@@ -73,6 +62,31 @@ func fetchUserData() {
 }
 ```
 
+#### List of available animatotrs: 
+##### (`default`) InstaLayerAnimatorGradient
+<p align="center">
+<img src ="./ReadmeAssets/insta1.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/insta2.gif" width="148" height="285"/>
+</p>
+
+##### BackAndFortLayerAnimatorGradient
+<p align="center">
+<img src ="./ReadmeAssets/bf1.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/bf2.gif" width="148" height="285"/>
+</p>
+
+##### BlinkAnimator
+<p align="center">
+<img src ="./ReadmeAssets/blink1.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/blink2.gif" width="148" height="285"/>
+</p>
+
+##### RainbowAnimatorGradient
+<p align="center">
+<img src ="./ReadmeAssets/Rainbow1.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/rainbow2.gif" width="148" height="285"/>
+</p>
+
 ### Advanced Configuration
 TBC
 
@@ -80,9 +94,9 @@ TBC
 TBC
 
 ## Swift support
-| Library ver| Swift ver|
-| ------------- |:-------------:|
-| 0.0.1   | 4.1 |
+| Library ver| Swift ver| Note |
+| ------------- |:-------------:| ------------- |
+| 0.0.1   | 4.1 | Very early version, API may change |
 
 ## Check the Demo project
 
