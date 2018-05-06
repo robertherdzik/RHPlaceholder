@@ -4,5 +4,5 @@ use_frameworks!
 
 target 'RHPlaceholderExample' do
 
-	pod 'RHPlaceholder', :git => 'https://github.com/robertherdzik/RHPlaceholder/tree/pod_addd/RHPlaceholder'
+	pod 'RHPlaceholder', :git => 'https://github.com/robertherdzik/RHPlaceholder/tree/pod_addd'
 end
