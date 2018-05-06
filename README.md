@@ -35,7 +35,10 @@ private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradie
 
 List of available animatotrs: 
 - `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
-TBC (add animation)
+<p align="center">
+<img src ="./ReadmeAssets/insta1.gif" width="252" height="480"/>
+<img src ="./ReadmeAssets/insta2.gif" width="252" height="480"/>
+</p>
 - `RainbowAnimatorGradient`
 TBC (add animation)
 - `BackAndFortLayerAnimatorGradient`
