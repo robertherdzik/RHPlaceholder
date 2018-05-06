@@ -8,6 +8,10 @@ final class Placeholder {
     // Property keeps all references to the animators to avoid early release
     private var animators = [LayerAnimating]()
     
+    /// Initializes and returns a newly allocated Placeholder object with the specified way of animation.
+    ///
+    /// - Parameter layerAnimator: the animator which contains specyfied layer animation logic,
+    /// you can create your own Animators based on LayerAnimating protcol
     init(layerAnimator: LayerAnimating.Type) {
         self.layerAnimator = layerAnimator
     }
@@ -20,6 +24,10 @@ final class Placeholder {
         removeAnimatorsReferences()
     }
     
+    /// Method register all elements which need Placeholder animation.
+    /// Elements have to be registered each time when you invoke `remove()`.
+    ///
+    /// - Parameter viewElements: elements which should be nimated
     func register(_ viewElements: [UIView]) {
         guard viewElements.count > 0 else { return }
         
@@ -29,11 +37,15 @@ final class Placeholder {
         }
     }
     
+    /// Method trigger animation start on already registered elements
+    /// *- NOTE: Method won't work, after invoking `remove()`, you need to register once again*
+    /// *all elements to perform animation second time.*
     func startAnimation() {
         addLayer()
         animate()
     }
     
+    /// Method remove and stop all animation
     func remove() {
         removeAnimation()
         removeAnimatorsReferences()

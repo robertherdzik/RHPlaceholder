@@ -105,16 +105,8 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 ---
 ## TODO:
 - URGENT
-- [x] add API methods for `showLoading()` and `hideLoading()`
-- [x] add shimmering animation
 - [ ] create pod
-- [x] add color configuration
 - [ ] add TableView example
-- [x] fix delay related with adding layers in viewDidLoad 
-- [x] fix tabbar on iPhone 8 in the example app
-- [ ] write documentation
-- [x] improve performance
-- [x] add icons for tabbar items
 
 - OPTIONAL
 - [ ] extract gradient animations logic
