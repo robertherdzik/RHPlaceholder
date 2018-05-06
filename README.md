@@ -106,7 +106,6 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 ## TODO:
 - URGENT
 - [ ] create pod
-- [ ] add TableView example
 
 - OPTIONAL
 - [ ] extract gradient animations logic
