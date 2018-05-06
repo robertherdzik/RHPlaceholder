@@ -33,23 +33,26 @@ bear in mind, that you can choose between couple of predefined animations (like 
 private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradient.self)
 ```
 
-List of available animatotrs: 
-- (`default`) `InstaLayerAnimatorGradient`
+#### List of available animatotrs: 
+##### (`default`) InstaLayerAnimatorGradient
 <p align="center">
 <img src ="./ReadmeAssets/insta1.gif" width="252" height="480"/>
 <img src ="./ReadmeAssets/insta2.gif" width="252" height="480"/>
 </p>
-- `RainbowAnimatorGradient`
+
+##### RainbowAnimatorGradient
 <p align="center">
 <img src ="./ReadmeAssets/Rainbow1.gif" width="252" height="480"/>
 <img src ="./ReadmeAssets/rainbow2.gif" width="252" height="480"/>
 </p>
-- `BackAndFortLayerAnimatorGradient`
+
+##### BackAndFortLayerAnimatorGradient
 <p align="center">
 <img src ="./ReadmeAssets/bf1.gif" width="252" height="480"/>
 <img src ="./ReadmeAssets/bf2.gif" width="252" height="480"/>
 </p>
-- `BlinkAnimator`
+
+##### BlinkAnimator
 <p align="center">
 <img src ="./ReadmeAssets/blink1.gif" width="252" height="480"/>
 <img src ="./ReadmeAssets/blink2.gif" width="252" height="480"/>
