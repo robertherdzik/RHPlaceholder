@@ -40,12 +40,6 @@ private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradie
 <img src ="./ReadmeAssets/insta2.gif" width="252" height="480"/>
 </p>
 
-##### RainbowAnimatorGradient
-<p align="center">
-<img src ="./ReadmeAssets/Rainbow1.gif" width="252" height="480"/>
-<img src ="./ReadmeAssets/rainbow2.gif" width="252" height="480"/>
-</p>
-
 ##### BackAndFortLayerAnimatorGradient
 <p align="center">
 <img src ="./ReadmeAssets/bf1.gif" width="252" height="480"/>
@@ -58,6 +52,11 @@ private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradie
 <img src ="./ReadmeAssets/blink2.gif" width="252" height="480"/>
 </p>
 
+##### RainbowAnimatorGradient
+<p align="center">
+<img src ="./ReadmeAssets/Rainbow1.gif" width="252" height="480"/>
+<img src ="./ReadmeAssets/rainbow2.gif" width="252" height="480"/>
+</p>
 
 ... and then just bind up library with your views which needs to be animated:
 
