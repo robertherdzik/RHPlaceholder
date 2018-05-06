@@ -34,17 +34,26 @@ private let placeholderMarker = Placeholder(layerAnimator: RainbowAnimatorGradie
 ```
 
 List of available animatotrs: 
-- `InstaLayerAnimatorGradient` (`Paceholder` designated init default value)
+- (`default`) `InstaLayerAnimatorGradient`
 <p align="center">
 <img src ="./ReadmeAssets/insta1.gif" width="252" height="480"/>
 <img src ="./ReadmeAssets/insta2.gif" width="252" height="480"/>
 </p>
 - `RainbowAnimatorGradient`
-TBC (add animation)
+<p align="center">
+<img src ="./ReadmeAssets/Rainbow1.gif" width="252" height="480"/>
+<img src ="./ReadmeAssets/rainbow2.gif" width="252" height="480"/>
+</p>
 - `BackAndFortLayerAnimatorGradient`
-TBC (add animation)
+<p align="center">
+<img src ="./ReadmeAssets/bf1.gif" width="252" height="480"/>
+<img src ="./ReadmeAssets/bf2.gif" width="252" height="480"/>
+</p>
 - `BlinkAnimator`
-TBC (add animation)
+<p align="center">
+<img src ="./ReadmeAssets/blink1.gif" width="252" height="480"/>
+<img src ="./ReadmeAssets/blink2.gif" width="252" height="480"/>
+</p>
 
 
 ... and then just bind up library with your views which needs to be animated:
