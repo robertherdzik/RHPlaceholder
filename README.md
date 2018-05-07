@@ -1,5 +1,5 @@
 <p align="center">
-<img src ="./ReadmeAssets/Logo.gif" width="150" height="150"/>
+<img src ="./ReadmeAssets/Logo.gif" width="148" height="130"/>
 </p>
 
 [![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](http://cocoadocs.org/docsets/RHPlaceholder)
@@ -65,26 +65,22 @@ func fetchUserData() {
 #### List of available animatotrs: 
 ##### (`default`) InstaLayerAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/insta1.gif" width="148" height="285"/>
-<img src ="./ReadmeAssets/insta2.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/insta1.gif" width="373" height="656"/>
 </p>
 
 ##### BackAndFortLayerAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/bf1.gif" width="148" height="285"/>
-<img src ="./ReadmeAssets/bf2.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/bf1.gif" width="186" height="328"/>
 </p>
 
 ##### BlinkAnimator
 <p align="center">
-<img src ="./ReadmeAssets/blink1.gif" width="148" height="285"/>
-<img src ="./ReadmeAssets/blink2.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/blink1.gif" width="186" height="328"/>
 </p>
 
 ##### RainbowAnimatorGradient
 <p align="center">
-<img src ="./ReadmeAssets/Rainbow1.gif" width="148" height="285"/>
-<img src ="./ReadmeAssets/rainbow2.gif" width="148" height="285"/>
+<img src ="./ReadmeAssets/Rainbow1.gif" width="186" height="328"/>
 </p>
 
 ### Advanced Configuration
