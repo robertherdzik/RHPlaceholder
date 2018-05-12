@@ -68,7 +68,7 @@ func fetchUserData() {
 <img src ="./ReadmeAssets/insta1.gif" width="373" height="656"/>
 </p>
 
-<table align="center">
+<table align="center" bgcolor="#FFFFFF">
   <tr>
     <th>BackAndForthLayerAnimatorGradient</th>
     <th>BackAndForthLayerAnimatorGradient</th>
