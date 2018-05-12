@@ -68,7 +68,7 @@ func fetchUserData() {
 <img src ="./ReadmeAssets/insta1.gif" width="373" height="656"/>
 </p>
 
-##### BackAndForhtLayerAnimatorGradient
+##### BackAndForthLayerAnimatorGradient
 <p align="center">
 <img src ="./ReadmeAssets/bf1.gif" width="186" height="328"/>
 </p>
@@ -116,7 +116,7 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 ## TODO:
 - URGENT
 - [ ] create pod
-- [ ] remove typo from BackAndFor_h_tLayerAnimatorGradient
+- [ ] remove typo from BackAndFort_h_LayerAnimatorGradient
 
 - OPTIONAL
 - [ ] extract gradient animations logic
