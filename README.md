@@ -68,20 +68,18 @@ func fetchUserData() {
 <img src ="./ReadmeAssets/insta1.gif" width="373" height="656"/>
 </p>
 
-##### BackAndForthLayerAnimatorGradient
-<p align="center">
-<img src ="./ReadmeAssets/bf1.gif" width="186" height="328"/>
-</p>
-
-##### BlinkAnimator
-<p align="center">
-<img src ="./ReadmeAssets/blink1.gif" width="186" height="328"/>
-</p>
-
-##### RainbowAnimatorGradient
-<p align="center">
-<img src ="./ReadmeAssets/Rainbow1.gif" width="186" height="328"/>
-</p>
+<table align="center">
+  <tr>
+    <th>BackAndForthLayerAnimatorGradient</th>
+    <th>BackAndForthLayerAnimatorGradient</th>
+    <th>BackAndForthLayerAnimatorGradient</th>
+  </tr>
+  <tr>
+    <td><img src ="./ReadmeAssets/bf1.gif" width="186" height="328"/></td>
+    <td><img src ="./ReadmeAssets/blink1.gif" width="186" height="328"/></td>
+    <td><img src ="./ReadmeAssets/Rainbow1.gif" width="186" height="328"/></td>
+  </tr>
+</table>
 
 ### Advanced Configuration
 TBC
