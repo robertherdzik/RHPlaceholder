@@ -5,10 +5,10 @@
 //  Created by Robert Herdzik on 06/05/2018.
 //  Copyright © 2018 Robert Herdzik. All rights reserved.
 //
-
-import XCTest
-@testable import RHPlaceholder
-
+//
+//import XCTest
+//@testable import RHPlaceholder
+//
 //class RHPlaceholderTests: XCTestCase {
 //    
 //    override func setUp() {
