@@ -1,16 +1,3 @@
-PODS:
-  - RHPlaceholder (0.0.1)
+PODFILE CHECKSUM: 02dc4cbc55ca39eb290f70580763dff0aabb8f02
 
-DEPENDENCIES:
-  - RHPlaceholder (from `/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder`)
-
-EXTERNAL SOURCES:
-  RHPlaceholder:
-    :path: "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder"
-
-SPEC CHECKSUMS:
-  RHPlaceholder: 809646e3a2c472ce7757831c9b4340de5092ac10
-
-PODFILE CHECKSUM: 41c9d99a98999328cf743839ad108a32d3a9019e
-
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2

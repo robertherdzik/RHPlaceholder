@@ -16,7 +16,6 @@
 		B1209570209F3667003697D9 /* RHPlaceholderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120956F209F3667003697D9 /* RHPlaceholderExampleTests.swift */; };
 		B12B4D98209F3762001CDA66 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4D96209F3762001CDA66 /* MyCell.swift */; };
 		B12B4D99209F3762001CDA66 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4D97209F3762001CDA66 /* TableViewController.swift */; };
-		C35B8F592F8FCC2FFDFC9E8D /* Pods_RHPlaceholderExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E365D737FE3E8449B21539B6 /* Pods_RHPlaceholderExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0B1DE2AC3AACC235F26CF130 /* Pods-RHPlaceholderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHPlaceholderExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHPlaceholderExample/Pods-RHPlaceholderExample.release.xcconfig"; sourceTree = "<group>"; };
-		23E44BCD4048BEF996B1C0BA /* Pods-RHPlaceholderExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHPlaceholderExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHPlaceholderExampleTests/Pods-RHPlaceholderExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		5513AE102EEF1B0D339CC8D0 /* Pods-RHPlaceholderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHPlaceholderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHPlaceholderExample/Pods-RHPlaceholderExample.debug.xcconfig"; sourceTree = "<group>"; };
-		640FE00C562425E7FB568E2B /* Pods-RHPlaceholderExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHPlaceholderExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHPlaceholderExampleTests/Pods-RHPlaceholderExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1209557209F3666003697D9 /* RHPlaceholderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPlaceholderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B120955A209F3666003697D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B120955C209F3666003697D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35B8F592F8FCC2FFDFC9E8D /* Pods_RHPlaceholderExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +71,6 @@
 			children = (
 				5513AE102EEF1B0D339CC8D0 /* Pods-RHPlaceholderExample.debug.xcconfig */,
 				0B1DE2AC3AACC235F26CF130 /* Pods-RHPlaceholderExample.release.xcconfig */,
-				640FE00C562425E7FB568E2B /* Pods-RHPlaceholderExampleTests.debug.xcconfig */,
-				23E44BCD4048BEF996B1C0BA /* Pods-RHPlaceholderExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -153,7 +147,6 @@
 				B1209553209F3666003697D9 /* Sources */,
 				B1209554209F3666003697D9 /* Frameworks */,
 				B1209555209F3666003697D9 /* Resources */,
-				F7C7F176A3A9B5D659E810F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,7 +161,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1209577209F3667003697D9 /* Build configuration list for PBXNativeTarget "RHPlaceholderExampleTests" */;
 			buildPhases = (
-				F1BB8B80600BADF8416139B1 /* [CP] Check Pods Manifest.lock */,
 				B1209567209F3667003697D9 /* Sources */,
 				B1209568209F3667003697D9 /* Frameworks */,
 				B1209569209F3667003697D9 /* Resources */,
@@ -258,42 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1BB8B80600BADF8416139B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RHPlaceholderExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7C7F176A3A9B5D659E810F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RHPlaceholderExample/Pods-RHPlaceholderExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RHPlaceholder/RHPlaceholder.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RHPlaceholder.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHPlaceholderExample/Pods-RHPlaceholderExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,10 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RHPlaceholderExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHPlaceholderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -487,10 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RHPlaceholderExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHPlaceholderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -500,17 +450,12 @@
 		};
 		B1209578209F3667003697D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 640FE00C562425E7FB568E2B /* Pods-RHPlaceholderExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RHPlaceholderExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHPlaceholderExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -521,17 +466,12 @@
 		};
 		B1209579209F3667003697D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23E44BCD4048BEF996B1C0BA /* Pods-RHPlaceholderExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RHPlaceholderExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHPlaceholderExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
