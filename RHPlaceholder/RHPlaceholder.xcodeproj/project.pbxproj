@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B1171C67209F2A6F00343FDD /* RHPlaceholder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1171C5D209F2A6F00343FDD /* RHPlaceholder.framework */; };
-		B1171C6C209F2A6F00343FDD /* RHPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C6B209F2A6F00343FDD /* RHPlaceholderTests.swift */; };
 		B1171C6E209F2A6F00343FDD /* RHPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = B1171C60209F2A6F00343FDD /* RHPlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1171C90209F2AC000343FDD /* PlaceholderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C78209F2AC000343FDD /* PlaceholderItem.swift */; };
 		B1171C91209F2AC000343FDD /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C79209F2AC000343FDD /* Placeholder.swift */; };
@@ -337,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1171C6C209F2A6F00343FDD /* RHPlaceholderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E98QD397NK;
 				INFOPLIST_FILE = RHPlaceholderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E98QD397NK;
 				INFOPLIST_FILE = RHPlaceholderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
