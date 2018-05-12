@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/robertherdzik/RHPlaceholder"
   
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-   s.license      = { :type => "MIT", :file => "LICENSE" }
+   s.license      = { :type => "MIT", :file => "LICENCE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.author             = { "Robert Herdzik" => "robert.herdzik@yahoo.com" }
