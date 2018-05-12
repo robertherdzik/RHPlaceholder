@@ -25,6 +25,7 @@
 		B1171C9D209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8C209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift */; };
 		B1171C9E209F2AC000343FDD /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8E209F2AC000343FDD /* UIColor+HEX.swift */; };
 		B1171C9F209F2AC000343FDD /* LayerAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8F209F2AC000343FDD /* LayerAnimating.swift */; };
+		B1301B8A20A71F9E00DF71D4 /* RHPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C6B209F2A6F00343FDD /* RHPlaceholderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1301B8A20A71F9E00DF71D4 /* RHPlaceholderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
