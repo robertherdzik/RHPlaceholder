@@ -373,7 +373,8 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.2815197100366198" green="0.27912382158616023" blue="0.46806185233160624" alpha="0.77759132922535212" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.054665083247572854" green="0.73897454386527051" blue="0.9217130829015544" alpha="0.77759132922535212" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.4823529412" green="0.59999999999999998" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
