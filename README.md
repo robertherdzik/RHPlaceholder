@@ -1,3 +1,7 @@
+<p align="center">
+<img src ="./ReadmeAssets/Logo.gif" width="104" height="91"/>
+</p>
+
 [![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](http://cocoadocs.org/docsets/RHPlaceholder)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
@@ -7,10 +11,6 @@
 Because tradicional `loading view` like `UIActivityIndicatorView` or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort 💥! 🍕 
 
 ## Play with it 😎
-
-<p align="center">
-<img src ="./ReadmeAssets/Logo.gif" width="104" height="91"/>
-</p>
 
 ## Installation
 You can install library using Cocoapods:
