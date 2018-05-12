@@ -22,7 +22,7 @@
 		B1171C99209F2AC000343FDD /* CAAnimationDelegateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C86209F2AC000343FDD /* CAAnimationDelegateReceiver.swift */; };
 		B1171C9A209F2AC000343FDD /* InstaLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C88209F2AC000343FDD /* InstaLayerAnimatorGradient.swift */; };
 		B1171C9B209F2AC000343FDD /* InstaLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C89209F2AC000343FDD /* InstaLayerAnimatorGradientConfiguration.swift */; };
-		B1171C9C209F2AC000343FDD /* BackAndFortLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8B209F2AC000343FDD /* BackAndFortLayerAnimatorGradient.swift */; };
+		B1171C9C209F2AC000343FDD /* BackAndForthLayerAnimatorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8B209F2AC000343FDD /* BackAndForthLayerAnimatorGradient.swift */; };
 		B1171C9D209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8C209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift */; };
 		B1171C9E209F2AC000343FDD /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8E209F2AC000343FDD /* UIColor+HEX.swift */; };
 		B1171C9F209F2AC000343FDD /* LayerAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1171C8F209F2AC000343FDD /* LayerAnimating.swift */; };
@@ -57,7 +57,7 @@
 		B1171C86209F2AC000343FDD /* CAAnimationDelegateReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationDelegateReceiver.swift; sourceTree = "<group>"; };
 		B1171C88209F2AC000343FDD /* InstaLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLayerAnimatorGradient.swift; sourceTree = "<group>"; };
 		B1171C89209F2AC000343FDD /* InstaLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
-		B1171C8B209F2AC000343FDD /* BackAndFortLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAndFortLayerAnimatorGradient.swift; sourceTree = "<group>"; };
+		B1171C8B209F2AC000343FDD /* BackAndForthLayerAnimatorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAndForthLayerAnimatorGradient.swift; sourceTree = "<group>"; };
 		B1171C8C209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAndForthLayerAnimatorGradientConfiguration.swift; sourceTree = "<group>"; };
 		B1171C8E209F2AC000343FDD /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 		B1171C8F209F2AC000343FDD /* LayerAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimating.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		B1171C8A209F2AC000343FDD /* BackAndForthAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				B1171C8B209F2AC000343FDD /* BackAndFortLayerAnimatorGradient.swift */,
+				B1171C8B209F2AC000343FDD /* BackAndForthLayerAnimatorGradient.swift */,
 				B1171C8C209F2AC000343FDD /* BackAndForthLayerAnimatorGradientConfiguration.swift */,
 			);
 			path = BackAndForthAnimation;
@@ -324,7 +324,7 @@
 				B1171C99209F2AC000343FDD /* CAAnimationDelegateReceiver.swift in Sources */,
 				B1171C92209F2AC000343FDD /* BlinkAnimator.swift in Sources */,
 				B1171C98209F2AC000343FDD /* LayerAnimatorGradientConfigurable.swift in Sources */,
-				B1171C9C209F2AC000343FDD /* BackAndFortLayerAnimatorGradient.swift in Sources */,
+				B1171C9C209F2AC000343FDD /* BackAndForthLayerAnimatorGradient.swift in Sources */,
 				B1171C90209F2AC000343FDD /* PlaceholderItem.swift in Sources */,
 				B1171C96209F2AC000343FDD /* RainbowAnimatorGradient.swift in Sources */,
 				B1171C94209F2AC000343FDD /* BlinkAnimatorConfigurable.swift in Sources */,

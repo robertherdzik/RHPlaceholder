@@ -1,6 +1,6 @@
 import UIKit
 
-public final class BackAndFortLayerAnimatorGradient: LayerAnimating {
+public final class BackAndForthLayerAnimatorGradient: LayerAnimating {
     
     public var originLayerColor: CGColor
     
@@ -13,16 +13,18 @@ public final class BackAndFortLayerAnimatorGradient: LayerAnimating {
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
     
-    private lazy var gradientColors = [
-        [configuration.fromColor, configuration.toColor],
-        [configuration.toColor, configuration.fromColor]
-    ]
+    private let gradientColors: [[CGColor]]
     private var currentGradient: Int = 0
     private var animationDelegate: CAAnimationDelegateReceiver?
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
         originLayerColor = configuration.fromColor
+        
+        gradientColors = [
+            [configuration.fromColor, configuration.toColor],
+            [configuration.toColor, configuration.fromColor]
+        ]
         
         setupAnimationDelegateReceiver()
     }

@@ -1,7 +1,7 @@
 import UIKit
 
 public final class InstaLayerAnimatorGradient: LayerAnimating {
-   
+    
     public var originLayerColor: CGColor
     
     // TODO [🌶]: duplication
@@ -13,17 +13,19 @@ public final class InstaLayerAnimatorGradient: LayerAnimating {
     private let configuration: LayerAnimatorGradientConfigurable
     private let animation = CABasicAnimation(keyPath: Constants.basicAnimationKeyPath)
     private let gradient = CAGradientLayer()
+    private let gradientColors: [CGColor]
     
-    private lazy var gradientColors = [
-        configuration.fromColor,
-        configuration.toColor,
-        configuration.toColor,
-        configuration.fromColor
-    ]
     private var currentGradient: Int = 0
     
     init(configuration: LayerAnimatorGradientConfigurable) {
         self.configuration = configuration
+        
+        gradientColors = [
+            configuration.fromColor,
+            configuration.toColor,
+            configuration.toColor,
+            configuration.fromColor
+        ]
         originLayerColor = configuration.fromColor
     }
     
@@ -36,7 +38,7 @@ public final class InstaLayerAnimatorGradient: LayerAnimating {
                                 y: 0,
                                 width: 2*frame.width,
                                 height: 2*frame.height)
-
+        
         gradient.startPoint = CGPoint(x:0.2, y:0.3)
         gradient.endPoint = CGPoint(x:1, y:0.6)
         gradient.locations = [0, 0.2, 0.22, 0.4]
@@ -47,7 +49,7 @@ public final class InstaLayerAnimatorGradient: LayerAnimating {
         
         return gradient
     }
-
+    
     private func animateGradient() {
         animation.duration = configuration.animationDuration
         animation.fromValue = -gradient.bounds.width
@@ -59,3 +61,4 @@ public final class InstaLayerAnimatorGradient: LayerAnimating {
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
     }
 }
+
