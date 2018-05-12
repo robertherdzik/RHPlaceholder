@@ -113,8 +113,6 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 ---
 ## TODO:
 - URGENT
-- [ ] create pod
-- [ ] remove typo from BackAndFort_h_LayerAnimatorGradient
 
 - OPTIONAL
 - [ ] extract gradient animations logic
