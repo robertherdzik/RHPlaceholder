@@ -1,5 +1,5 @@
 <p align="center">
-<img src ="./ReadmeAssets/Logo.gif"/>
+<img src ="./ReadmeAssets/LogoBanner.gif"/>
 </p>
 
 [![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](http://cocoadocs.org/docsets/RHPlaceholder)
