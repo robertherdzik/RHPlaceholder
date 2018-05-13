@@ -80,12 +80,6 @@ func fetchUserData() {
   </tr>
 </table>
 
-### Advanced Configuration
-TBC
-
-### Create your own animation! 🙊
-TBC
-
 ## Swift support
 | Library ver| Swift ver| Note |
 | ------------- |:-------------:| ------------- |
@@ -112,6 +106,7 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 ---
 ## TODO:
 - URGENT
+- [ ] Unit Tests 
 
 - OPTIONAL
 - [ ] extract gradient animations logic
