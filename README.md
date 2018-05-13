@@ -80,6 +80,9 @@ func fetchUserData() {
   </tr>
 </table>
 
+#### Customization
+You can add your own Animators, by conforming to the `LayerAnimating` protocol and passing your new Animator as a param to the `Placeholder` init.
+
 ## Swift support
 | Library ver| Swift ver| Note |
 | ------------- |:-------------:| ------------- |
