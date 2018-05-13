@@ -2,7 +2,7 @@
 <img src ="./ReadmeAssets/LogoBanner.gif"/>
 </p>
 
-[![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](http://cocoadocs.org/docsets/RHPlaceholder)
+[![Version](https://img.shields.io/cocoapods/v/RHPlaceholder.svg?style=flat)](https://cocoapods.org/pods/RHPlaceholder)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
