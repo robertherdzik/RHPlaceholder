@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode9.3
+xcode_project: RHPlaceholder/RHPlaceholder.xcodeproj
+xcode_scheme: RHPlaceholder
+xcode_sdk: iphonesimulator11.3
