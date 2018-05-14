@@ -106,16 +106,3 @@ Layout inspiration has been taken from one of the Dribbble projects, unfortunate
 
 - Cool 😎 profile icon from:
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-
----
-## TODO:
-- URGENT
-- [ ] Unit Tests 
-
-- OPTIONAL
-- [ ] extract gradient animations logic
-- [ ] add posibility to set bg image below animated gradient
-- [ ] improve InstaLayerAnimatorGradient, gradient should respect the size of layer in which he is displayed
-
- 
