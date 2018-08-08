@@ -89,7 +89,8 @@ You can add your own Animators, by conforming to the `LayerAnimating` protocol a
 ## Swift support
 | Library ver| Swift ver| Note |
 | ------------- |:-------------:| ------------- |
-| 0.0.2   | 4.1 | Very early version, API may change |
+| 0.0.3   | 4.1 | Very early version, API may change |
+
 
 ## Check the Demo project
 
