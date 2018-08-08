@@ -19,6 +19,7 @@ You can install library using Cocoapods:
 ```
 pod 'RHPlaceholder'
 ```
+or using Carthage
 
 ## Usage
 WOW... it is soo easy to use 🙊! Base integration with your storyboard VC will take couple minutes 💥
@@ -88,7 +89,7 @@ You can add your own Animators, by conforming to the `LayerAnimating` protocol a
 ## Swift support
 | Library ver| Swift ver| Note |
 | ------------- |:-------------:| ------------- |
-| 0.0.1   | 4.1 | Very early version, API may change |
+| 0.0.2   | 4.1 | Very early version, API may change |
 
 ## Check the Demo project
 
