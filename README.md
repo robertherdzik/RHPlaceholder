@@ -15,11 +15,17 @@ Because traditional `loading view` like `UIActivityIndicatorView` or similar one
 ## Play with it 😎
 
 ## Installation
-You can install library using Cocoapods:
+You can install library using <b> Cocoapods</b>:
 ```
 pod 'RHPlaceholder'
 ```
-or using Carthage
+or using 
+<b> Carthage</b>:
+add
+```
+github "robertherdzik/RHPlaceholder"
+```
+to your Cartfile and perform `carthage update --platform iOS.`
 
 ## Usage
 WOW... it is soo easy to use 🙊! Base integration with your storyboard VC will take couple minutes 💥
