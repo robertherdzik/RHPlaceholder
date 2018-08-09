@@ -21,6 +21,7 @@ pod 'RHPlaceholder'
 ```
 or using 
 <b> Carthage</b>:
+
 add
 ```
 github "robertherdzik/RHPlaceholder"
