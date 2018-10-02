@@ -1,6 +1,6 @@
 import UIKit
 
-public extension UIColor {
+extension UIColor {
 
     /// Usage:
     /// let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
