@@ -55,7 +55,7 @@ public final class InstaLayerAnimatorGradient: LayerAnimating {
         animation.fromValue = -gradient.bounds.width
         animation.toValue = gradient.bounds.width
         animation.repeatCount = Float.infinity
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         animation.isRemovedOnCompletion = false
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)

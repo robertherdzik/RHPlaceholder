@@ -61,7 +61,7 @@ final class RainbowAnimatorGradient: LayerAnimating {
         
         animation.duration = configuration.animationDuration
         animation.toValue = gradientColors[currentGradient]
-        animation.fillMode = kCAFillModeBoth
+        animation.fillMode = CAMediaTimingFillMode.both
         animation.isRemovedOnCompletion = false
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)
