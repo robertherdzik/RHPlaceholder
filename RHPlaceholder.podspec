@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RHPlaceholder"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Because tradicional loading view like UIActivityIndicatorView or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort ❗️🍕"
   s.description  = "Because tradicional loading view like UIActivityIndicatorView or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort ❗️🍕Because tradicional loading view like UIActivityIndicatorView or similar one are noo longer so trendy (Facebook or Instagram apps are moving away from these approaches), I decided to create very simple library which will give you oportunity to have Facebook or Instagram 'view loading state' in your great project without big effort ❗️🍕"
   s.homepage     = "https://github.com/robertherdzik/RHPlaceholder"

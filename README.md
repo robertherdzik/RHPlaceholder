@@ -98,6 +98,7 @@ You can add your own Animators, by conforming to the `LayerAnimating` protocol a
 | ------------- |:-------------:| ------------- |
 | 0.0.3   | 4.1 | Very early version, API may change |
 | 0.0.5   | 4.2 | Very early version, API may change |
+| 0.0.6   | 5.0 | Very early version, API may change |
 
 
 ## Check the Demo project

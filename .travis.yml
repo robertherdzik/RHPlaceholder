@@ -1,4 +1,4 @@
 language: objective-c
-osx_image: xcode10.1
+osx_image: xcode10.3
 script:
-  - xcodebuild -project RHPlaceholder/RHPlaceholder.xcodeproj -target RHPlaceholder -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=11'
+  - xcodebuild -project RHPlaceholder/RHPlaceholder.xcodeproj -target RHPlaceholder -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.4'
