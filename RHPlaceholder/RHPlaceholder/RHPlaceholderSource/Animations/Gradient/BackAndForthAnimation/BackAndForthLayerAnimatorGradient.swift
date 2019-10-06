@@ -60,7 +60,7 @@ public final class BackAndForthLayerAnimatorGradient: LayerAnimating {
         
         animation.duration = configuration.animationDuration
         animation.toValue = gradientColors[currentGradient]
-        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.fillMode = .forwards
         animation.isRemovedOnCompletion = false
         
         gradient.add(animation, forKey: Constants.gradientAnimationAddKeyPath)

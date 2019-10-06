@@ -25,7 +25,7 @@ public struct BlinkAnimator: LayerAnimating {
         animation.duration = configuration.animationDuration
         animation.repeatCount = Float.infinity
         animation.toValue = configuration.blinkColor
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         
         let layer = UIView(frame: frame).layer
         layer.add(animation, forKey: Constants.gradientAnimationAddKeyPath)

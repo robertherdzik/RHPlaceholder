@@ -18,8 +18,9 @@ Pod::Spec.new do |s|
   :tag => s.version.to_s
   }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
   s.requires_arc = true
+  s.swift_version = '5.0'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "Classes", "RHPlaceholder/**/*.{swift}"

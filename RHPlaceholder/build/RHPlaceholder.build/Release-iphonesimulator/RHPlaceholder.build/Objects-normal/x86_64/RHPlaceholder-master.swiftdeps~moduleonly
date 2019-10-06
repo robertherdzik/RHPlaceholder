@@ -1,0 +1,20 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "42ad8d9fcf58186939cf82de22100f57"
+build_time: [1570287343, 148217000]
+inputs:
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Blink/BlinkAnimatorConfiguration.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Utils/UIColor+HEX.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/InstaAnimation/InstaLayerAnimatorGradientConfiguration.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/BackAndForthAnimation/BackAndForthLayerAnimatorGradientConfiguration.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/LayerAnimating.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/InstaAnimation/InstaLayerAnimatorGradient.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/Common/LayerAnimatorGradientConfiguration.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/Common/CAAnimationDelegateReceiver.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Blink/BlinkAnimator.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/Common/LayerAnimatorGradientConfigurable.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/BackAndForthAnimation/BackAndForthLayerAnimatorGradient.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/PlaceholderItem.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/RainbowAnimation/RainbowAnimatorGradient.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Blink/BlinkAnimatorConfigurable.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Animations/Gradient/RainbowAnimation/RainbowAnimatorGradientConfiguration.swift": [9223372036, 854775807]
+  "/Users/robertherdzik/Documents/Workspace/Git/RHPlaceholder/RHPlaceholder/RHPlaceholder/RHPlaceholderSource/Placeholder.swift": [9223372036, 854775807]

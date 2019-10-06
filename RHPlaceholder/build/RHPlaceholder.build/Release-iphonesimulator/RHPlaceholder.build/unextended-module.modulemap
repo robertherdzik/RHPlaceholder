@@ -1,0 +1,10 @@
+framework module RHPlaceholder {
+  umbrella header "RHPlaceholder.h"
+
+  export *
+  module * { export * }
+}
+
+module RHPlaceholder.__Swift {
+    exclude header "RHPlaceholder-Swift.h"
+}

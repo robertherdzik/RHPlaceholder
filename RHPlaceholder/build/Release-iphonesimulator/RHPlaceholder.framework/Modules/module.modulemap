@@ -1,0 +1,11 @@
+framework module RHPlaceholder {
+  umbrella header "RHPlaceholder.h"
+
+  export *
+  module * { export * }
+}
+
+module RHPlaceholder.Swift {
+    header "RHPlaceholder-Swift.h"
+    requires objc
+}
