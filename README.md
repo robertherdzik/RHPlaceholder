@@ -80,8 +80,8 @@ func fetchUserData() {
 <table align="center" bgcolor="#FFFFFF">
   <tr>
     <th>BackAndForthLayerAnimatorGradient</th>
-    <th>BackAndForthLayerAnimatorGradient</th>
-    <th>BackAndForthLayerAnimatorGradient</th>
+    <th>BlinkAnimator</th>
+    <th>RainbowAnimatorGradient</th>
   </tr>
   <tr>
     <td><img src ="./ReadmeAssets/bf1.gif" width="186" height="328"/></td>
